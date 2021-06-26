@@ -1,0 +1,15 @@
+
+RUNNING:  Processing next 4 rows out of 3017 remaining...
+	Column header row:
+		- IGNORED
+	Jira user 100026433 paul.valentin@nbcuni.com (Never logged in):
+		- cannot confirm user 100026433 membership in Jira group jira-users due to error.
+			User 100026433 is not a member of Jira group jira-users.
+	Jira user 101019913 OKochugova@cnbc.com (Idle for last 265 days):
+		- cannot confirm user 101019913 membership in Jira group jira-users due to error.
+			User 101019913 is not a member of Jira group jira-users.
+	Jira user 121005472 steve.amani@nbcuni.com (Idle for last 905 days):
+		- user 121005472 confirmed to have membership in Jira group jira-users.
+
+INTERRUPTED:  Process aborted, 3013 rows remain unprocessed.
+
