@@ -69,9 +69,10 @@ with open(csvfilename, newline='') as csvfile:
 			else:
 				printout(f"\nRUNNING:  Processing next {min(nextrowcount,(totrows-csvidx))} rows out of {(totrows-csvidx)} remaining...")
 		if csvrow[1] != "username":   # process non-header row
-			loginstatus = csvrow[3]
-			if loginstatus == "Idle":
-				loginstatus += " for last " + csvrow[4].split(" - since ")[1]
+			if csvrow[3] == "Idle":
+				loginstatus += csvrow[3] + " for last " + csvrow[4].split(" - since ")[1]
+			else:
+				loginstatus = csvrow[3]
 			printout( f"\tJira user {csvrow[1]} {csvrow[2]} ({loginstatus}):" )
 			for groupname in csvrow[5].split(','):  # for each group listed in col-6 data
 				if groupname in targetgroups:
