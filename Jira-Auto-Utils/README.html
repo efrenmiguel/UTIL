@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/*
+
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #3f3f3f;
+  color: #dcdcdc;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #e3ceab;
+}
+
+.hljs-template-tag {
+  color: #dcdcdc;
+}
+
+.hljs-number {
+  color: #8cd0d3;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute {
+  color: #efdcbc;
+}
+
+.hljs-literal {
+  color: #efefaf;
+}
+
+.hljs-subst {
+  color: #8f8f8f;
+}
+
+.hljs-title,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-section,
+.hljs-type {
+  color: #efef8f;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #dca3a3;
+}
+
+.hljs-deletion,
+.hljs-string,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #cc9393;
+}
+
+.hljs-addition,
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #7f9f7f;
+}
+
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="remove-jira-users-from-groups">Remove Jira Users From Groups</h1>
+<p>This utility Python script can help to bulk-remove Jira users exported from Jira using the myUserManagerForJira Plug-in app, from specific Jira user groups specifically <strong>jira-users</strong> and <strong>jira-servicedesk-users</strong> group names.</p>
+<hr>
+<h2 id="1-pre-requisites">1. Pre-requisites</h2>
+<p>This script is tested with Python 3.95 on Windows 10, and uses the <strong>Requests</strong> python module.</p>
+<h3 id="11-install-python">1.1. Install Python</h3>
+<p>Please install the latest version of Python 3 as follows:</p>
+<ul>
+<li>In your browser, go to https://www.python.org/downloads/</li>
+<li>Hover on the <em>Downloads</em> menu, hover on <em>Windows</em>, then click on the <em>Python 3.x</em> download button.</li>
+<li>Follow prompts to complete installation</li>
+<li>Check from Windows command line:<pre class="hljs"><code><div>&gt; py --version
+Python <span class="hljs-number">3</span>.<span class="hljs-number">9</span>.<span class="hljs-number">5</span>
+</div></code></pre>
+</li>
+</ul>
+<h3 id="12-install-requests-python-module">1.2. Install Requests Python Module</h3>
+<p>The <strong>requests</strong> Python module helps simplify executing HTTP Client tasks in Python, to install this module:</p>
+<ul>
+<li>From the Windows command line:<pre class="hljs"><code><div>&gt; py -m install requests
+</div></code></pre>
+</li>
+</ul>
+<h3 id="13-deploy-script">1.3. Deploy Script</h3>
+<ul>
+<li>Get a copy of the <code>remove-jira-user-from-group.py</code> Python script</li>
+<li>Create a working folder and place the script in there</li>
+</ul>
+<hr>
+<h2 id="2-run-update-process">2. Run Update Process</h2>
+<h3 id="21-extract-jira-users">2.1. Extract Jira Users</h3>
+<p>This script will only work with users in a CSV file exported by the <em>myUserManagerForJira</em> Plug-in app in Jira, at least in current layout of its CSV Export fle.</p>
+<ul>
+<li>Make sure you have the <strong>myUserManagerForJira</strong> Plug-in installed and activated.</li>
+<li>Go to <em><strong>User Management</strong></em> tab in the Jira dashboard.</li>
+<li>Under <em>My User Manager</em> side menu section, click on <em><strong>Filter Users</strong></em>.</li>
+<li>Enter the following <em>Search</em> criteria:
+<ul>
+<li><em>Last login since (in days)</em> - enter the desired idle aging number of days, enter <code>90</code> to include users that has not logged-in in the last 3 months.</li>
+<li><em>In Groups</em> - enter <code>jira-users, jira-servicedesk-users</code></li>
+<li><em>User Status</em> - select <code>Idle</code>, then also select <code>Never logged in</code>.</li>
+<li>Leave other Search fields as blanks.</li>
+</ul>
+</li>
+<li>Click on the <em><strong>Search</strong></em> button.
+<ul>
+<li>This can take a few seconds or minutes to run.</li>
+<li>Watch for the <em>Showing users 1 to 10 of n</em> text on dashboard, it's complete when n changes to a new value.</li>
+<li>Do visual validation on the number of canditate users, and some sample users to make sure you have the right set of target users.</li>
+</ul>
+</li>
+<li>Click on <em><strong>Export to CSV</strong></em> just above the graphic section on the same page.</li>
+<li>Save the CSV file on the work folder you placed the Python script earlier.</li>
+</ul>
+<h3 id="22-run-script">2.2. Run Script</h3>
+<p>Before running the script, make sure that your Jira user/SSO has Jira Admin permissions, you will be prompted to enter that username and password.</p>
+<ul>
+<li>
+<p>Go to your working folder.</p>
+</li>
+<li>
+<p>Check to make sure you have your script and input file ready.</p>
+<pre class="hljs"><code><div>&gt; <span class="hljs-built_in">cd</span> C:\jirawork
+<span class="hljs-function">
+C:\<span class="hljs-title">jirawork</span>&gt; <span class="hljs-title">dir</span>
+
+<span class="hljs-title">Mode</span>                <span class="hljs-title">LastWriteTime</span>         <span class="hljs-title">Length</span> <span class="hljs-title">Name</span>
+----                -------------         ------ ----
+-<span class="hljs-title">a</span>---<span class="hljs-title">l</span>        6/28/2021   8:26 <span class="hljs-title">AM</span>         427268 <span class="hljs-title">jirastg_idleusers_20210623.csv</span>
+-<span class="hljs-title">a</span>---<span class="hljs-title">l</span>        6/28/2021   8:33 <span class="hljs-title">AM</span>           4204 <span class="hljs-title">remove</span>-<span class="hljs-title">jira</span>-<span class="hljs-title">user</span>-<span class="hljs-title">from</span>-<span class="hljs-title">group.py</span>
+</span></div></code></pre>
+</li>
+<li>
+<p>Now run the script:</p>
+<p>Please note that the script will give you a chance to process input records in batches, you can even process just a couple of records first to validate before running bigger groups of records. Also, the script generates a log file, everything that that is printed on the console except for the user prompts, is also write to the log file.</p>
+<p>To run the script, enter the following from the command line:</p>
+<pre class="hljs"><code><div><span class="hljs-function">C:\<span class="hljs-title">jirawork</span>&gt; <span class="hljs-title">py</span> <span class="hljs-title">remove</span>-<span class="hljs-title">jira</span>-<span class="hljs-title">user</span>-<span class="hljs-title">from</span>-<span class="hljs-title">group.py</span> '{<span class="hljs-title">csv_filename</span>}'
+</span></div></code></pre>
+<p>Follow the prompts shown as follows:</p>
+<ul>
+<li>Jira hostname - for Staging, enter <code>jirastg.inbcu.com</code><pre class="hljs"><code><div><span class="hljs-function">ASKING:  <span class="hljs-title">Please</span> <span class="hljs-title">enter</span> <span class="hljs-title">the</span> <span class="hljs-title">Jira</span> <span class="hljs-title">hostname</span>: <span class="hljs-title">jirastg.inbcu.com</span>
+</span></div></code></pre>
+</li>
+<li>Jira Admin credentials - enter your SSO and password<pre class="hljs"><code><div><span class="hljs-function">ASKING:  <span class="hljs-title">Please</span> <span class="hljs-title">enter</span> <span class="hljs-title">your</span> <span class="hljs-title">Jira</span> <span class="hljs-title">Admin</span> <span class="hljs-title">user</span>: 987654321
+<span class="hljs-title">Please</span> <span class="hljs-title">enter</span> <span class="hljs-title">password</span>:
+</span></div></code></pre>
+</li>
+<li>Records to process - enter the number of input records to process, you might want to start with a very small number.<pre class="hljs"><code><div><span class="hljs-function">ASKING:  <span class="hljs-title">How</span> <span class="hljs-title">many</span> <span class="hljs-title">rows</span> <span class="hljs-title">do</span> <span class="hljs-title">you</span> <span class="hljs-title">want</span> <span class="hljs-title">to</span> <span class="hljs-title">process</span> <span class="hljs-title">next</span>, 3017 <span class="hljs-title">remaining</span>? <span class="hljs-title">Enter</span> 0 <span class="hljs-title">to</span> <span class="hljs-title">quit</span>: 3
+
+<span class="hljs-title">RUNNING</span>:  <span class="hljs-title">Processing</span> <span class="hljs-title">next</span> 3 <span class="hljs-title">rows</span> <span class="hljs-title">out</span> <span class="hljs-title">of</span> 3017 <span class="hljs-title">remaining</span>...
+	<span class="hljs-title">Column</span> <span class="hljs-title">header</span> <span class="hljs-title">row</span>:
+		- <span class="hljs-title">IGNORED</span>
+	<span class="hljs-title">Jira</span> <span class="hljs-title">user</span> 100026433 <span class="hljs-title">paul.valentin</span>@<span class="hljs-title">nbcuni.com</span> (<span class="hljs-title">Never</span> <span class="hljs-title">logged</span> <span class="hljs-title">in</span>):
+		- <span class="hljs-title">user</span> 100026433 <span class="hljs-title">successfully</span> <span class="hljs-title">removed</span> <span class="hljs-title">from</span> <span class="hljs-title">Jira</span> <span class="hljs-title">group</span> <span class="hljs-title">jira</span>-<span class="hljs-title">users</span>.
+	<span class="hljs-title">Jira</span> <span class="hljs-title">user</span> 101019913 <span class="hljs-title">OKochugova</span>@<span class="hljs-title">cnbc.com</span> (<span class="hljs-title">Never</span> <span class="hljs-title">logged</span> <span class="hljs-title">inIdle</span> <span class="hljs-title">for</span> <span class="hljs-title">last</span> 265 <span class="hljs-title">days</span>):
+		- <span class="hljs-title">user</span> 101019913 <span class="hljs-title">successfully</span> <span class="hljs-title">removed</span> <span class="hljs-title">from</span> <span class="hljs-title">Jira</span> <span class="hljs-title">group</span> <span class="hljs-title">jira</span>-<span class="hljs-title">users</span>.
+</span></div></code></pre>
+</li>
+<li>(NEXT) Records to process - you will be prompted again after the number of records is processed, you might want to consider processing in groups of 100-500 input records, it could take about 1 min to process a group of 100 records. If you want to discontinue, just enter <code>0</code> at this prompt.<pre class="hljs"><code><div><span class="hljs-function">ASKING:  <span class="hljs-title">How</span> <span class="hljs-title">many</span> <span class="hljs-title">rows</span> <span class="hljs-title">do</span> <span class="hljs-title">you</span> <span class="hljs-title">want</span> <span class="hljs-title">to</span> <span class="hljs-title">process</span> <span class="hljs-title">next</span>, 3014 <span class="hljs-title">remaining</span>? <span class="hljs-title">Enter</span> 0 <span class="hljs-title">to</span> <span class="hljs-title">quit</span>: 0
+
+<span class="hljs-title">INTERRUPTED</span>:  <span class="hljs-title">Process</span> <span class="hljs-title">aborted</span>, 3014 <span class="hljs-title">rows</span> <span class="hljs-title">remain</span> <span class="hljs-title">unprocessed</span>.
+</span></div></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Log File
+Every time you run the script, a new log file is created where all logs and errors are written. In the same working directory, look for a files that are named like <code>remove_groupuser_D20210625_T184913.log</code></p>
+</li>
+</ul>
+<h2 id="3-source-code">3. Source Code</h2>
+<ul>
+<li>
+<p>The following is the current source code for the Python script:</p>
+<p><code>remove-jira-user-from-group.py</code>:</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Remove Jira users from jira-users and jira-servicedesk-users group with CSV SSO list</span>
+<span class="hljs-comment">#   CSV file must be in the format exported by the myUserManagerForJira plug-in app</span>
+<span class="hljs-comment"># To run from Windows command line:</span>
+<span class="hljs-comment">#   &gt; py -3 remove-jira-user-from-group.py '{input-csv-filename}'</span>
+
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">import</span> csv
+<span class="hljs-keyword">from</span> getpass <span class="hljs-keyword">import</span> getpass
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">from</span> requests.auth <span class="hljs-keyword">import</span> HTTPBasicAuth
+<span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+
+<span class="hljs-comment">#--------------------------------------------</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">removeuserfromgroup</span><span class="hljs-params">(username, groupname)</span>:</span>
+	<span class="hljs-keyword">try</span>:  <span class="hljs-comment"># call rest api</span>
+		response = requests.delete(<span class="hljs-string">f"https://<span class="hljs-subst">{jirahostname}</span>/rest/api/latest/group/user"</span>, 
+			params={<span class="hljs-string">'groupname'</span>:groupname, <span class="hljs-string">'username'</span>:username}, auth=HTTPBasicAuth(myjirauser, myjirapwd))
+		response.raise_for_status()
+		<span class="hljs-comment"># Code here will only run if the request is successful</span>
+		(errorsev, errormsg) = (<span class="hljs-number">0</span>, <span class="hljs-string">''</span>)
+	<span class="hljs-keyword">except</span> requests.exceptions.HTTPError <span class="hljs-keyword">as</span> errhttp:
+		<span class="hljs-keyword">if</span> response.status_code == <span class="hljs-number">400</span>:
+			(errorsev, errormsg) = (<span class="hljs-number">1</span>, <span class="hljs-string">f"STATUS 400 - User <span class="hljs-subst">{username}</span> does not belong to group <span class="hljs-subst">{groupname}</span>."</span>)
+		<span class="hljs-keyword">elif</span> response.status_code == <span class="hljs-number">401</span>:
+			(errorsev, errormsg) = (<span class="hljs-number">2</span>, <span class="hljs-string">f"STATUS 401 - Cannot authenticate user <span class="hljs-subst">{myjirauser}</span>."</span>)
+		<span class="hljs-keyword">elif</span> response.status_code == <span class="hljs-number">403</span>:
+			(errorsev, errormsg) = (<span class="hljs-number">2</span>, <span class="hljs-string">f"STATUS 403 - User <span class="hljs-subst">{myjirauser}</span> does not have administrator permissions."</span>)
+		<span class="hljs-keyword">elif</span> response.status_code == <span class="hljs-number">404</span>:
+			(errorsev, errormsg) = (<span class="hljs-number">1</span>, <span class="hljs-string">f"STATUS 404 - User <span class="hljs-subst">{username}</span> or group <span class="hljs-subst">{groupname}</span> not found in Jira."</span>)
+		<span class="hljs-keyword">else</span>:
+			(errorsev, errormsg) = (<span class="hljs-number">2</span>, errhttp)
+	<span class="hljs-keyword">except</span> (requests.exceptions.ConnectionError, requests.exceptions.Timeout, requests.exceptions.RequestException) <span class="hljs-keyword">as</span> errother:
+		(errorsev, errormsg) = (<span class="hljs-number">2</span>, errother)
+	<span class="hljs-keyword">return</span> (errorsev, errormsg)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">printout</span><span class="hljs-params">(printtext)</span>:</span>
+	print(printtext)  <span class="hljs-comment"># write to console</span>
+	outfile.write(printtext+<span class="hljs-string">"\n"</span>)  <span class="hljs-comment"># write to log file</span>
+	<span class="hljs-keyword">return</span>
+
+<span class="hljs-comment">#--------------------------------------------</span>
+
+<span class="hljs-comment"># receive/set params</span>
+csvfilename = sys.argv[<span class="hljs-number">1</span>]
+targetgroups = [<span class="hljs-string">"jira-users"</span>, <span class="hljs-string">"jira-servicedesk-users"</span>]
+
+<span class="hljs-comment"># ask me for jira host and my creds</span>
+jirahostname = input(<span class="hljs-string">"\nASKING:  Please enter the Jira hostname: "</span>)
+myjirauser = input(<span class="hljs-string">"\nASKING:  Please enter your Jira Admin user: "</span>)
+myjirapwd = getpass(<span class="hljs-string">"\tPlease enter password: "</span>)
+
+<span class="hljs-comment"># create and open log file</span>
+date_time = datetime.now().strftime(<span class="hljs-string">'D%Y%m%d_T%H%M%S'</span>)
+outfile = open(<span class="hljs-string">f"remove_groupuser_<span class="hljs-subst">{date_time}</span>.log"</span>, <span class="hljs-string">"a"</span>)
+
+<span class="hljs-comment"># process csv file </span>
+<span class="hljs-keyword">with</span> open(csvfilename, newline=<span class="hljs-string">''</span>) <span class="hljs-keyword">as</span> csvfile:
+	csvdata = csv.reader(csvfile, delimiter=<span class="hljs-string">","</span>, quotechar=<span class="hljs-string">"\""</span>)
+	totrows = sum(<span class="hljs-number">1</span> <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> csvdata)
+	csvfile.seek(<span class="hljs-number">0</span>)  <span class="hljs-comment"># reset csvfile pointer</span>
+	nextrowcount = <span class="hljs-number">0</span>
+	<span class="hljs-keyword">for</span> csvidx, csvrow <span class="hljs-keyword">in</span> enumerate(csvdata):
+		<span class="hljs-keyword">if</span> nextrowcount &lt;= <span class="hljs-number">0</span>:
+			<span class="hljs-comment"># ask me how many rows to process next</span>
+			nextrowcount = int(input(<span class="hljs-string">f"\nASKING:  How many rows do you want to process next, <span class="hljs-subst">{(totrows-csvidx)}</span> remaining? Enter 0 to quit: "</span>))
+			<span class="hljs-keyword">if</span> nextrowcount == <span class="hljs-number">0</span>:
+				printout(<span class="hljs-string">f"\nINTERRUPTED:  Process aborted, <span class="hljs-subst">{(totrows-csvidx)}</span> rows remain unprocessed.\n"</span>)
+				exit(<span class="hljs-number">1</span>)
+			<span class="hljs-keyword">else</span>:
+				printout(<span class="hljs-string">f"\nRUNNING:  Processing next <span class="hljs-subst">{min(nextrowcount,(totrows-csvidx))}</span> rows out of <span class="hljs-subst">{(totrows-csvidx)}</span> remaining..."</span>)
+		<span class="hljs-keyword">if</span> csvrow[<span class="hljs-number">1</span>] != <span class="hljs-string">"username"</span>:   <span class="hljs-comment"># process non-header row</span>
+			<span class="hljs-keyword">if</span> csvrow[<span class="hljs-number">3</span>] == <span class="hljs-string">"Idle"</span>:
+				loginstatus += csvrow[<span class="hljs-number">3</span>] + <span class="hljs-string">" for last "</span> + csvrow[<span class="hljs-number">4</span>].split(<span class="hljs-string">" - since "</span>)[<span class="hljs-number">1</span>]
+			<span class="hljs-keyword">else</span>:
+				loginstatus = csvrow[<span class="hljs-number">3</span>]
+			printout( <span class="hljs-string">f"\tJira user <span class="hljs-subst">{csvrow[<span class="hljs-number">1</span>]}</span> <span class="hljs-subst">{csvrow[<span class="hljs-number">2</span>]}</span> (<span class="hljs-subst">{loginstatus}</span>):"</span> )
+			<span class="hljs-keyword">for</span> groupname <span class="hljs-keyword">in</span> csvrow[<span class="hljs-number">5</span>].split(<span class="hljs-string">','</span>):  <span class="hljs-comment"># for each group listed in col-6 data</span>
+				<span class="hljs-keyword">if</span> groupname <span class="hljs-keyword">in</span> targetgroups:
+					(errsev, errmsg) = removeuserfromgroup(username=csvrow[<span class="hljs-number">1</span>], groupname=groupname)
+					<span class="hljs-keyword">if</span> errsev == <span class="hljs-number">0</span>:
+						printout(<span class="hljs-string">f"\t\t- user <span class="hljs-subst">{csvrow[<span class="hljs-number">1</span>]}</span> successfully removed from Jira group <span class="hljs-subst">{groupname}</span>."</span>)
+					<span class="hljs-keyword">else</span>:
+						printout(<span class="hljs-string">f"\t\t- user <span class="hljs-subst">{csvrow[<span class="hljs-number">1</span>]}</span> NOT removed from Jira group <span class="hljs-subst">{groupname}</span> due to error."</span>)
+						printout(<span class="hljs-string">f"\t\t\t<span class="hljs-subst">{errmsg}</span>"</span>)
+						<span class="hljs-keyword">if</span> errsev &gt;= <span class="hljs-number">2</span>:
+							printout(<span class="hljs-string">f"\nINTERRUPTED:  Process aborted due to hard failure, <span class="hljs-subst">{(totrows-csvidx)}</span> rows remain unprocessed.\n"</span>)
+							exit(<span class="hljs-number">1</span>)
+		<span class="hljs-keyword">else</span>:
+			printout( <span class="hljs-string">f"\tColumn header row:\n\t\t- IGNORED"</span> )
+		nextrowcount -= <span class="hljs-number">1</span>
+	csvfile.close()
+
+printout(<span class="hljs-string">f"\nDONE:  Finished processing <span class="hljs-subst">{(totrows)}</span> total rows.\n"</span>)
+outfile.close()
+exit(<span class="hljs-number">0</span>)
+</div></code></pre>
+</li>
+</ul>
+
+</body>
+</html>

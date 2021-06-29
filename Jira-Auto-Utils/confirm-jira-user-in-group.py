@@ -1,5 +1,7 @@
-# Remove Jira users from jira-users and jira-servicedesk-users group with CSV SSO list
+# Confirm Jira users in jira-users and jira-servicedesk-users group with CSV SSO list
 #   CSV file must be in the format exported by the myUserManagerForJira plug-in app
+# To run from Windows command line:
+#   > py -3 confirm-jira-user-in-group.py '{input-csv-filename}'
 
 import sys
 import csv
@@ -10,22 +12,23 @@ from datetime import datetime
 
 #--------------------------------------------
 
-def removeuserfromgroup(username, groupname):
+def confirmuseringroup(username, groupname):
 	try:  # call rest api
-		response = requests.delete(f"https://{jirahostname}/rest/api/latest/group/user", 
-			params={'groupname':groupname, 'username':username}, auth=HTTPBasicAuth(myjirauser, myjirapwd))
+		response = requests.get(f"https://{jirahostname}/rest/api/latest/user", 
+			params={'username':username,'expand':'groups'}, auth=HTTPBasicAuth(myjirauser, myjirapwd))
 		response.raise_for_status()
 		# Code here will only run if the request is successful
-		(errorsev, errormsg) = (0, '')
+		errorsev = 1
+		for group in response.json()["groups"]["items"]:  # for each group assigned to user
+			if (group["name"] == groupname):  # check if target group name, if yes turn-off error
+				(errorsev, errormsg) = (0, '')
+		if errorsev > 0:  # target group not one of groups assigned to user
+			errormsg = f"User {username} is not a member of Jira group {groupname}."
 	except requests.exceptions.HTTPError as errhttp:
-		if response.status_code == 400:
-			(errorsev, errormsg) = (1, f"STATUS 400 - User {username} does not belong to group {groupname}.")
-		elif response.status_code == 401:
+		if response.status_code == 401:
 			(errorsev, errormsg) = (2, f"STATUS 401 - Cannot authenticate user {myjirauser}.")
-		elif response.status_code == 403:
-			(errorsev, errormsg) = (2, f"STATUS 403 - User {myjirauser} does not have administrator permissions.")
 		elif response.status_code == 404:
-			(errorsev, errormsg) = (1, f"STATUS 404 - User {username} or group {groupname} not found in Jira.")
+			(errorsev, errormsg) = (1, f"STATUS 404 - User {username} not found in Jira.")
 		else:
 			(errorsev, errormsg) = (2, errhttp)
 	except (requests.exceptions.ConnectionError, requests.exceptions.Timeout, requests.exceptions.RequestException) as errother:
@@ -50,7 +53,7 @@ myjirapwd = getpass("\tPlease enter password: ")
 
 # create and open log file
 date_time = datetime.now().strftime('D%Y%m%d_T%H%M%S')
-outfile = open(f"remove_groupuser_{date_time}.log", "a")
+outfile = open(f"confirm_groupuser_{date_time}.log", "a")
 
 # process csv file 
 with open(csvfilename, newline='') as csvfile:
@@ -75,11 +78,11 @@ with open(csvfilename, newline='') as csvfile:
 			printout( f"\tJira user {csvrow[1]} {csvrow[2]} ({loginstatus}):" )
 			for groupname in csvrow[5].split(','):  # for each group listed in col-6 data
 				if groupname in targetgroups:
-					(errsev, errmsg) = removeuserfromgroup(username=csvrow[1], groupname=groupname)
+					(errsev, errmsg) = confirmuseringroup(username=csvrow[1], groupname=groupname)
 					if errsev == 0:
-						printout(f"\t\t- user {csvrow[1]} successfully removed from Jira group {groupname}.")
+						printout(f"\t\t- user {csvrow[1]} confirmed to have membership in Jira group {groupname}.")
 					else:
-						printout(f"\t\t- user {csvrow[1]} NOT removed from Jira group {groupname} due to error.")
+						printout(f"\t\t- cannot confirm user {csvrow[1]} membership in Jira group {groupname} due to error.")
 						printout(f"\t\t\t{errmsg}")
 						if errsev >= 2:
 							printout(f"\nINTERRUPTED:  Process aborted due to hard failure, {(totrows-csvidx)} rows remain unprocessed.\n")
