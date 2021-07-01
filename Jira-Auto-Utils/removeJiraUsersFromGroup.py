@@ -52,7 +52,7 @@ myjirapwd = getpass("\tPlease enter password: ")
 
 # create and open log file
 date_time = datetime.now().strftime('D%Y%m%d_T%H%M%S')
-outfile = open(f"remove_groupuser_{date_time}.log", "a")
+outfile = open(f"removeJiraUsersFromGroup_{date_time}.log", "a")
 
 # process csv file 
 with open(csvfilename, newline='') as csvfile:

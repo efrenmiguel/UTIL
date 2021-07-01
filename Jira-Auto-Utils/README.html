@@ -374,7 +374,7 @@ code {
     });
   </script>
 <h1 id="remove-jira-users-from-groups">Remove Jira Users From Groups</h1>
-<p>This utility Python script can help to bulk-remove Jira users exported from Jira using the myUserManagerForJira Plug-in app, from specific Jira user groups specifically <strong>jira-users</strong> and <strong>jira-servicedesk-users</strong> group names.</p>
+<p>This utility Python script can help to bulk-remove Jira users exported from Jira using the myUserManagerForJira Plug-in app, from specific Jira user groups - <strong>jira-users</strong> and <strong>jira-servicedesk-users</strong>.</p>
 <hr>
 <h2 id="1-pre-requisites">1. Pre-requisites</h2>
 <p>This script is tested with Python 3.95 on Windows 10, and uses the <strong>Requests</strong> python module.</p>
@@ -384,7 +384,7 @@ code {
 <li>In your browser, go to https://www.python.org/downloads/</li>
 <li>Hover on the <em>Downloads</em> menu, hover on <em>Windows</em>, then click on the <em>Python 3.x</em> download button.</li>
 <li>Follow prompts to complete installation</li>
-<li>Check from Windows command line:<pre class="hljs"><code><div>&gt; py --version
+<li>Check from Windows command line:<pre class="hljs"><code><div>&gt; py -<span class="hljs-number">3</span> --version
 Python <span class="hljs-number">3</span>.<span class="hljs-number">9</span>.<span class="hljs-number">5</span>
 </div></code></pre>
 </li>
@@ -392,19 +392,19 @@ Python <span class="hljs-number">3</span>.<span class="hljs-number">9</span>.<sp
 <h3 id="12-install-requests-python-module">1.2. Install Requests Python Module</h3>
 <p>The <strong>requests</strong> Python module helps simplify executing HTTP Client tasks in Python, to install this module:</p>
 <ul>
-<li>From the Windows command line:<pre class="hljs"><code><div>&gt; py -m install requests
+<li>From the Windows command line:<pre class="hljs"><code><div>&gt; py -3 -m install requests
 </div></code></pre>
 </li>
 </ul>
 <h3 id="13-deploy-script">1.3. Deploy Script</h3>
 <ul>
-<li>Get a copy of the <code>remove-jira-user-from-group.py</code> Python script</li>
-<li>Create a working folder and place the script in there</li>
+<li>Get a copy of the <code>removeJiraUsersFromGroup.py</code> Python script.</li>
+<li>Create a working folder and place the script in there.</li>
 </ul>
 <hr>
 <h2 id="2-run-update-process">2. Run Update Process</h2>
 <h3 id="21-extract-jira-users">2.1. Extract Jira Users</h3>
-<p>This script will only work with users in a CSV file exported by the <em>myUserManagerForJira</em> Plug-in app in Jira, at least in current layout of its CSV Export fle.</p>
+<p>This script will only work with users in a CSV file exported by the <em>myUserManagerForJira</em> Plug-in app in Jira, at least in current layout of its CSV Export file.</p>
 <ul>
 <li>Make sure you have the <strong>myUserManagerForJira</strong> Plug-in installed and activated.</li>
 <li>Go to <em><strong>User Management</strong></em> tab in the Jira dashboard.</li>
@@ -431,7 +431,7 @@ Python <span class="hljs-number">3</span>.<span class="hljs-number">9</span>.<sp
 <p>Before running the script, make sure that your Jira user/SSO has Jira Admin permissions, you will be prompted to enter that username and password.</p>
 <ul>
 <li>
-<p>Go to your working folder.</p>
+<p>In the command line, go to your working folder.</p>
 </li>
 <li>
 <p>Check to make sure you have your script and input file ready.</p>
@@ -442,14 +442,14 @@ C:\<span class="hljs-title">jirawork</span>&gt; <span class="hljs-title">dir</sp
 <span class="hljs-title">Mode</span>                <span class="hljs-title">LastWriteTime</span>         <span class="hljs-title">Length</span> <span class="hljs-title">Name</span>
 ----                -------------         ------ ----
 -<span class="hljs-title">a</span>---<span class="hljs-title">l</span>        6/28/2021   8:26 <span class="hljs-title">AM</span>         427268 <span class="hljs-title">jirastg_idleusers_20210623.csv</span>
--<span class="hljs-title">a</span>---<span class="hljs-title">l</span>        6/28/2021   8:33 <span class="hljs-title">AM</span>           4204 <span class="hljs-title">remove</span>-<span class="hljs-title">jira</span>-<span class="hljs-title">user</span>-<span class="hljs-title">from</span>-<span class="hljs-title">group.py</span>
+-<span class="hljs-title">a</span>---<span class="hljs-title">l</span>        6/28/2021   8:33 <span class="hljs-title">AM</span>           4204 <span class="hljs-title">removeJiraUsersFromGroup.py</span>
 </span></div></code></pre>
 </li>
 <li>
 <p>Now run the script:</p>
-<p>Please note that the script will give you a chance to process input records in batches, you can even process just a couple of records first to validate before running bigger groups of records. Also, the script generates a log file, everything that that is printed on the console except for the user prompts, is also write to the log file.</p>
+<p>Please note that the script will give you a chance to process input records in batches, you can even process just a couple of records first to validate before running bigger groups of records. Also, the script generates a log file, everything that is printed on the console except for the user prompts, is also written to the log file.</p>
 <p>To run the script, enter the following from the command line:</p>
-<pre class="hljs"><code><div><span class="hljs-function">C:\<span class="hljs-title">jirawork</span>&gt; <span class="hljs-title">py</span> <span class="hljs-title">remove</span>-<span class="hljs-title">jira</span>-<span class="hljs-title">user</span>-<span class="hljs-title">from</span>-<span class="hljs-title">group.py</span> '{<span class="hljs-title">csv_filename</span>}'
+<pre class="hljs"><code><div><span class="hljs-function">C:\<span class="hljs-title">jirawork</span>&gt; <span class="hljs-title">py</span> -3 <span class="hljs-title">removeJiraUsersFromGroup.py</span> '{<span class="hljs-title">csv_filename</span>}'
 </span></div></code></pre>
 <p>Follow the prompts shown as follows:</p>
 <ul>
@@ -457,7 +457,7 @@ C:\<span class="hljs-title">jirawork</span>&gt; <span class="hljs-title">dir</sp
 </span></div></code></pre>
 </li>
 <li>Jira Admin credentials - enter your SSO and password<pre class="hljs"><code><div><span class="hljs-function">ASKING:  <span class="hljs-title">Please</span> <span class="hljs-title">enter</span> <span class="hljs-title">your</span> <span class="hljs-title">Jira</span> <span class="hljs-title">Admin</span> <span class="hljs-title">user</span>: 987654321
-<span class="hljs-title">Please</span> <span class="hljs-title">enter</span> <span class="hljs-title">password</span>:
+	<span class="hljs-title">Please</span> <span class="hljs-title">enter</span> <span class="hljs-title">password</span>:
 </span></div></code></pre>
 </li>
 <li>Records to process - enter the number of input records to process, you might want to start with a very small number.<pre class="hljs"><code><div><span class="hljs-function">ASKING:  <span class="hljs-title">How</span> <span class="hljs-title">many</span> <span class="hljs-title">rows</span> <span class="hljs-title">do</span> <span class="hljs-title">you</span> <span class="hljs-title">want</span> <span class="hljs-title">to</span> <span class="hljs-title">process</span> <span class="hljs-title">next</span>, 3017 <span class="hljs-title">remaining</span>? <span class="hljs-title">Enter</span> 0 <span class="hljs-title">to</span> <span class="hljs-title">quit</span>: 3
@@ -480,18 +480,18 @@ C:\<span class="hljs-title">jirawork</span>&gt; <span class="hljs-title">dir</sp
 </li>
 <li>
 <p>Log File
-Every time you run the script, a new log file is created where all logs and errors are written. In the same working directory, look for a files that are named like <code>remove_groupuser_D20210625_T184913.log</code></p>
+Every time you run the script, a new log file is created where all logs and errors are written. In the same working directory, look for a files that are named like <code>removeJiraUsersFromGroup_D20210625_T184913.log</code></p>
 </li>
 </ul>
 <h2 id="3-source-code">3. Source Code</h2>
 <ul>
 <li>
 <p>The following is the current source code for the Python script:</p>
-<p><code>remove-jira-user-from-group.py</code>:</p>
+<p><code>removeJiraUsersFromGroup.py</code>:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># Remove Jira users from jira-users and jira-servicedesk-users group with CSV SSO list</span>
 <span class="hljs-comment">#   CSV file must be in the format exported by the myUserManagerForJira plug-in app</span>
 <span class="hljs-comment"># To run from Windows command line:</span>
-<span class="hljs-comment">#   &gt; py -3 remove-jira-user-from-group.py '{input-csv-filename}'</span>
+<span class="hljs-comment">#   &gt; py -3 removeJiraUsersFromGroup.py '{input-csv-filename}'</span>
 
 <span class="hljs-keyword">import</span> sys
 <span class="hljs-keyword">import</span> csv
@@ -542,7 +542,7 @@ myjirapwd = getpass(<span class="hljs-string">"\tPlease enter password: "</span>
 
 <span class="hljs-comment"># create and open log file</span>
 date_time = datetime.now().strftime(<span class="hljs-string">'D%Y%m%d_T%H%M%S'</span>)
-outfile = open(<span class="hljs-string">f"remove_groupuser_<span class="hljs-subst">{date_time}</span>.log"</span>, <span class="hljs-string">"a"</span>)
+outfile = open(<span class="hljs-string">f"removeJiraUsersFromGroup_<span class="hljs-subst">{date_time}</span>.log"</span>, <span class="hljs-string">"a"</span>)
 
 <span class="hljs-comment"># process csv file </span>
 <span class="hljs-keyword">with</span> open(csvfilename, newline=<span class="hljs-string">''</span>) <span class="hljs-keyword">as</span> csvfile:

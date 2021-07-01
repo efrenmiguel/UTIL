@@ -15,7 +15,7 @@ Please install the latest version of Python 3 as follows:
 - Hover on the *Downloads* menu, hover on *Windows*, then click on the *Python 3.x* download button.
 - Follow prompts to complete installation 
 - Check from Windows command line:
-	```cmd
+	```PowerShell
 	> py -3 --version
 	Python 3.9.5
 	```
@@ -31,7 +31,7 @@ The **requests** Python module helps simplify executing HTTP Client tasks in Pyt
 
 ### 1.3. Deploy Script
 
-- Get a copy of the `remove-jira-user-from-group.py` Python script.
+- Get a copy of the `removeJiraUsersFromGroup.py` Python script.
 - Create a working folder and place the script in there.
 
 ---
@@ -55,6 +55,15 @@ This script will only work with users in a CSV file exported by the *myUserManag
 	- Do visual validation on the number of canditate users, and some sample users to make sure you have the right set of target users.
 - Click on ***Export to CSV*** just above the graphic section on the same page.
 - Save the CSV file on the work folder you placed the Python script earlier.
+	The CSV file should have the following format:
+	```PowerShell
+	> Get-Content jirastg_idleusers_20210623.csv -Head 5
+	fullname,username,email,status,lastLogin,groups,directory
+	"Valentin, Paul","100026433","paul.valentin@nbcuni.com","Never logged in","","jira-users","Active Directory server",
+	"Kochugova, Oksana","101019913","OKochugova@cnbc.com","Idle","02.10.2020 05:34:27 - since 265 days","jira-users","Active Directory server",
+	"AMANI, Steve","121005472","steve.amani@nbcuni.com","Idle","31.12.2018 18:57:17 - since 905 days","jira-users","Active Directory server",
+	"Hill, Richard","127000187","richard.hill@nbcuni.com","Idle","06.08.2019 06:34:24 - since 688 days","jira-users","Active Directory server",
+	```
 
 ### 2.2. Run Script
 
@@ -63,7 +72,7 @@ Before running the script, make sure that your Jira user/SSO has Jira Admin perm
 - In the command line, go to your working folder.
 
 - Check to make sure you have your script and input file ready.
-	```cmd
+	```PowerShell
 	> cd C:\jirawork
 
 	C:\jirawork> dir
@@ -71,7 +80,7 @@ Before running the script, make sure that your Jira user/SSO has Jira Admin perm
 	Mode                LastWriteTime         Length Name
 	----                -------------         ------ ----
 	-a---l        6/28/2021   8:26 AM         427268 jirastg_idleusers_20210623.csv
-	-a---l        6/28/2021   8:33 AM           4204 remove-jira-user-from-group.py
+	-a---l        6/28/2021   8:33 AM           4204 removeJiraUsersFromGroup.py
 	```
 
 - Now run the script:
@@ -79,21 +88,21 @@ Before running the script, make sure that your Jira user/SSO has Jira Admin perm
 	Please note that the script will give you a chance to process input records in batches, you can even process just a couple of records first to validate before running bigger groups of records. Also, the script generates a log file, everything that is printed on the console except for the user prompts, is also written to the log file.
 
 	To run the script, enter the following from the command line:
-	```cmd
-	C:\jirawork> py -3 remove-jira-user-from-group.py '{csv_filename}'
+	```PowerShell
+	C:\jirawork> py -3 removeJiraUsersFromGroup.py '{csv_filename}'
 	```
 	Follow the prompts shown as follows:
 	- Jira hostname - for Staging, enter `jirastg.inbcu.com`
-		```cmd
+		```PowerShell
 		ASKING:  Please enter the Jira hostname: jirastg.inbcu.com
 		```
 	- Jira Admin credentials - enter your SSO and password
-		```cmd
+		```PowerShell
 		ASKING:  Please enter your Jira Admin user: 987654321
 			Please enter password:
 		```
 	- Records to process - enter the number of input records to process, you might want to start with a very small number.
-		```cmd
+		```PowerShell
 		ASKING:  How many rows do you want to process next, 3017 remaining? Enter 0 to quit: 3
 
 		RUNNING:  Processing next 3 rows out of 3017 remaining...
@@ -105,26 +114,26 @@ Before running the script, make sure that your Jira user/SSO has Jira Admin perm
 				- user 101019913 successfully removed from Jira group jira-users.
 		```
 	- (NEXT) Records to process - you will be prompted again after the number of records is processed, you might want to consider processing in groups of 100-500 input records, it could take about 1 min to process a group of 100 records. If you want to discontinue, just enter `0` at this prompt. 
-		```cmd
+		```PowerShell
 		ASKING:  How many rows do you want to process next, 3014 remaining? Enter 0 to quit: 0
 
 		INTERRUPTED:  Process aborted, 3014 rows remain unprocessed.
 		```
 
 - Log File
-	Every time you run the script, a new log file is created where all logs and errors are written. In the same working directory, look for a files that are named like `remove_groupuser_D20210625_T184913.log`
+	Every time you run the script, a new log file is created where all logs and errors are written. In the same working directory, look for a files that are named like `removeJiraUsersFromGroup_D20210625_T184913.log`
 
 
 ## 3. Source Code
 
 - The following is the current source code for the Python script:
 
-	`remove-jira-user-from-group.py`:
+	`removeJiraUsersFromGroup.py`:
 	```python
 	# Remove Jira users from jira-users and jira-servicedesk-users group with CSV SSO list
 	#   CSV file must be in the format exported by the myUserManagerForJira plug-in app
 	# To run from Windows command line:
-	#   > py -3 remove-jira-user-from-group.py '{input-csv-filename}'
+	#   > py -3 removeJiraUsersFromGroup.py '{input-csv-filename}'
 
 	import sys
 	import csv
@@ -175,7 +184,7 @@ Before running the script, make sure that your Jira user/SSO has Jira Admin perm
 
 	# create and open log file
 	date_time = datetime.now().strftime('D%Y%m%d_T%H%M%S')
-	outfile = open(f"remove_groupuser_{date_time}.log", "a")
+	outfile = open(f"removeJiraUsersFromGroup_{date_time}.log", "a")
 
 	# process csv file 
 	with open(csvfilename, newline='') as csvfile:
