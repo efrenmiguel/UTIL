@@ -67,7 +67,7 @@ with open(csvfilename, 'w', newline='') as csvfile:
 	(errsev, errmsg, allprojects) = getProjects()
 	if errsev == 0:
 
-		csvdata.writerow(['projectKey','projectName','projectType','category','leadSSO','leadName','leadStatus','lastIssueUpdate'])
+		csvdata.writerow(['projectKey','projectName','projectType','category','leadSSO','activeSSO?','leadName','lastIssueUpdate'])
 
 		for index,project in enumerate(allprojects):
 			if index > 10:
@@ -94,8 +94,8 @@ with open(csvfilename, 'w', newline='') as csvfile:
 			else:
 				csvrow.append(None)
 			csvrow.append(lead.get("name"))
-			csvrow.append(lead.get("displayName"))
 			csvrow.append(lead.get("active"))
+			csvrow.append(lead.get("displayName"))
 			csvrow.append(lastissueupdate)
 			
 			csvdata.writerow(csvrow)
