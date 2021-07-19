@@ -25,7 +25,7 @@ Please install the latest version of Python 3 as follows:
 The **requests** Python module helps simplify executing HTTP Client tasks in Python, to install this module:
 
 - From the Windows command line: 
-	```
+	```PowerShell
 	> py -3 -m install requests
 	```
 

@@ -44,6 +44,7 @@ def printout(printtext):
 # receive/set params
 csvfilename = sys.argv[1]
 targetgroups = ["jira-users", "jira-servicedesk-users"]
+targetstatus = ["Never logged in", "Idle", "Inactive"]
 
 # ask me for jira host and my creds
 jirahostname = input("\nASKING:  Please enter the Jira hostname: ")
@@ -69,25 +70,33 @@ with open(csvfilename, newline='') as csvfile:
 				exit(1)
 			else:
 				printout(f"\nRUNNING:  Processing next {min(nextrowcount,(totrows-csvidx))} rows out of {(totrows-csvidx)} remaining...")
-		if csvrow[1] != "username":   # process non-header row
-			if csvrow[3] == "Idle":
-				loginstatus += csvrow[3] + " for last " + csvrow[4].split(" - since ")[1]
-			else:
-				loginstatus = csvrow[3]
-			printout( f"\tJira user {csvrow[1]} {csvrow[2]} ({loginstatus}):" )
-			for groupname in csvrow[5].split(','):  # for each group listed in col-6 data
-				if groupname in targetgroups:
-					(errsev, errmsg) = removeuserfromgroup(username=csvrow[1], groupname=groupname)
-					if errsev == 0:
-						printout(f"\t\t- user {csvrow[1]} successfully removed from Jira group {groupname}.")
-					else:
-						printout(f"\t\t- user {csvrow[1]} NOT removed from Jira group {groupname} due to error.")
-						printout(f"\t\t\t{errmsg}")
-						if errsev >= 2:
-							printout(f"\nINTERRUPTED:  Process aborted due to hard failure, {(totrows-csvidx)} rows remain unprocessed.\n")
-							exit(1)
-		else:
+		if csvrow[1] == "username":   # ignore col header row
 			printout( f"\tColumn header row:\n\t\t- IGNORED" )
+		else:
+			if csvrow[3] == "Never logged in":
+				loginstatus = csvrow[3]
+			else:
+				if csvrow[4] == "no data":
+					loginstatus = csvrow[3] + " with no login data"
+				else:
+					loginstatus = csvrow[3] + " for last " + csvrow[4].split(" - since ")[1]
+			printout( f"\tJira user {csvrow[1]} {csvrow[2]} ({loginstatus}):" )
+			if csvrow[3] in targetstatus:
+				for groupname in csvrow[5].split(','):  # for each group listed in col-6 data
+					if groupname in targetgroups:
+						# execute method to remove user from group
+						(errsev, errmsg) = removeuserfromgroup(username=csvrow[1], groupname=groupname)
+						if errsev == 0:
+							printout(f"\t\t- user {csvrow[1]} successfully removed from Jira group {groupname}.")
+						else:
+							printout(f"\t\t- user {csvrow[1]} NOT removed from Jira group {groupname} due to error.")
+							printout(f"\t\t\t{errmsg}")
+							if errsev >= 2:
+								printout(f"\nINTERRUPTED:  Process aborted due to hard failure, {(totrows-csvidx)} rows remain unprocessed.\n")
+								exit(1)
+			else:
+				printout( f"\t\t- IGNORED - status \"{csvrow[3]}\" not desired for processing." )
+
 		nextrowcount -= 1
 	csvfile.close()
 
