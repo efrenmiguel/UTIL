@@ -1,0 +1,44 @@
+#**
+Display Random Child Page Link
+@author Efren Miguel - https://github.com/???
+@version 1.0
+@since 2021-08-20
+*#
+## Macro title: Random Child Page Link
+## Macro has a body: No
+## Body processing: No Macro Body
+## Output: Given a parent page, return link to one of the child pages in a random order
+##
+## Developed by: Efren Miguel - https://github.com/???
+## Date created: 2021-08-20
+## Installed by: Efren Miguel - https://github.com/???
+
+## @param ParentPage:title=Parent Page Title|type=confluence-content|required=true|desc=To specify a page in a different space, use SPACEKEY:Page Title
+
+## get parent page and space
+#set ( $colonIndex = $paramParentPage.indexOf(":") )
+#if ( $colonIndex == -1 )
+	#set ( $spaceKey = $space.key )
+	#set ( $pageName = $paramParentPage )
+#else
+	## a spacekey was passed with the ParentPage param
+	#set ( $spaceKey = $paramParentPage.substring(0, $colonIndex) )
+	#set ( $pageNameIndex = $colonIndex + 1 )
+	#set ( $pageName = $paramParentPage.substring($pageNameIndex) )
+#end
+#set ( $parentPage = $pageManager.getPage($spaceKey, $pageName) )
+#set ( $pageSpace = $spaceManager.getSpace($spaceKey) )
+
+## get one child page in a random order
+#set ( $childPages = $pageManager.getDescendants($parentPage) )
+#set ( $myRandomLimit = $childPages.size() )
+#set ( $myRandomNum = $action.dateFormatter.calendar.timeInMillis % $myRandomLimit + 1 )
+#set ( $myRandomIndex = $myRandomNum.intValue() - 1 )
+#set ( $randomChildPage = $childPages.get($myRandomIndex) )
+
+## return link in em-phasized html format
+<em>
+	<ac:link>
+		<ri:page ri:content-title="$randomChildPage.getTitle()" ri:space-key="$spaceKey"/> $randomChildPage.getTitle()
+	</ac:link> 
+</em>
