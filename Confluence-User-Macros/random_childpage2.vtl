@@ -1,0 +1,65 @@
+#**
+Display Random Child Page Link (with Label Filter)
+@author Efren Miguel - https://github.com/???
+@version 1.1
+@since 2021-08-20
+*#
+## Macro title: Random Child Page Link
+## Macro has a body: No
+## Body processing: No Macro Body
+## Output: Given a parent page, return link to one of the child pages in a random order
+##
+## Developed by: Efren Miguel - https://github.com/???
+## Date created: 2021-08-20
+## Installed by: Efren Miguel - https://github.com/???
+
+## @param ParentPage:title=Parent Page Title|type=confluence-content|required=true|desc=To specify a page in a different space, use SPACEKEY:Page Title
+## @param FilterLabel:title=Child Page Filter Label|type=string|required=false|desc=Enter a Label if you want to filter child pages
+
+## get parent page and space
+#set ( $colonIndex = $paramParentPage.indexOf(":") )
+#if ( $colonIndex == -1 )
+	#set ( $spaceKey = $space.key )
+	#set ( $pageName = $paramParentPage )
+#else
+	## a spacekey was passed with the ParentPage param
+	#set ( $spaceKey = $paramParentPage.substring(0, $colonIndex) )
+	#set ( $pageNameIndex = $colonIndex + 1 )
+	#set ( $pageName = $paramParentPage.substring($pageNameIndex) )
+#end
+#set ( $parentPage = $pageManager.getPage($spaceKey, $pageName) )
+##set ( $pageSpace = $spaceManager.getSpace($spaceKey) )
+
+## get child pages
+#set ( $childPages = $pageManager.getDescendants($parentPage) )
+#set ( $childTotalCount = $childPages.size() )
+
+## build list of child page indices to include
+#set ( $indices = [] )
+#foreach( $p in [1..$childTotalCount] )
+	#set ( $childPageIndex = $p - 1 )
+	#set ( $childPage = $childPages.get($childPageIndex) )
+	## create the map of labels for this child page
+	#set( $labelsMap = {} )
+	#foreach( $label in $childPage.getLabels() )
+		#set( $_ = $labelsMap.put($label.toString(), 1) )
+	#end
+	## add child page index if desired
+	#if( !$paramFilterLabel || $labelsMap.containsKey($paramFilterLabel) )
+		#set ( $_ = $indices.add($childPageIndex) )
+	#end
+#end
+
+## randomly pick from one of included child pages
+#set ( $myRandomLimit = $indices.size() )
+#set ( $myRandomNum = $action.dateFormatter.calendar.timeInMillis % $myRandomLimit + 1 )
+#set ( $myRandomIndex = $myRandomNum.intValue() - 1 )
+#set ( $randomChildPageIndex = $indices.get($myRandomIndex) )
+#set ( $randomChildPage = $childPages.get($randomChildPageIndex) )
+
+## return link in em-phasized html format
+<em>
+	<ac:link>
+		<ri:page ri:content-title="$randomChildPage.getTitle()" ri:space-key="$spaceKey"/> $randomChildPage.getTitle()
+	</ac:link> 
+</em>
