@@ -39,6 +39,14 @@ jirahostname = input("\nASKING:  Please enter the Jira hostname: ")
 myjirauser = input("\nASKING:  Please enter your Jira Admin user: ")
 myjirapwd = getpass("\tPlease enter password: ")
 groupname = input("\nASKING:  Please enter Jira group name: ")
+outputdir = input("\nASKING:  Please enter the directory for the output CSV file: ")
+
+# create and open csv file
+date_time = datetime.now().strftime('D%Y%m%d_T%H%M%S')
+if outputdir:
+	csvfilename = f"{outputdir}/JiraGroupUsers_{groupname.replace(' ','').replace('-','')}_{date_time}.csv"
+else:
+	csvfilename = f"JiraGroupUsers_{groupname.replace(' ','').replace('-','')}_{date_time}.csv"
 
 # create and open csv file
 date_time = datetime.now().strftime('D%Y%m%d_T%H%M%S')

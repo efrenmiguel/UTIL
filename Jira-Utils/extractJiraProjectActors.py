@@ -66,10 +66,14 @@ jirahostname = input("\nASKING:  Please enter the Jira hostname: ")
 myjirauser = input("\nASKING:  Please enter your Jira Admin user: ")
 myjirapwd = getpass("\tPlease enter password: ")
 startingprojkey = input("\nASKING:  Please enter the starting Project Key (leave empty otherwise): ")
+outputdir = input("\nASKING:  Please enter the directory for the output CSV file: ")
 
 # create and open csv file
 date_time = datetime.now().strftime('D%Y%m%d_T%H%M%S')
-csvfilename = f"JiraProjectActors_{date_time}.csv"
+if outputdir:
+	csvfilename = f"{outputdir}/JiraProjectActors_{date_time}.csv"
+else:
+	csvfilename = f"JiraProjectActors_{date_time}.csv"
 with open(csvfilename, "w", encoding="utf-8", newline="") as csvfile:
 	csvdata = csv.writer(csvfile, delimiter=",", quotechar="\"")
 
