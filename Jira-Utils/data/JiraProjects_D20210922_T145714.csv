@@ -1,0 +1,694 @@
+projectKey,projectName,projectType,category,lastIssueUpdate,leadUserName,permissionScheme
+BOT, Box Office Transparency,software,,2018-11-09,206407591,NBCU: Open Permission Scheme
+DPEPOL, DPE - Post Olympics Project list,software,,2021-08-26,206428130,Default software scheme
+IRF, Inventory Request Form,service_desk,DevOps,2020-03-30,206078834,JIRA Service Desk Permission Scheme for Project IRF
+DATORAMA, NBC Media Datorama,software,,2020-06-15,206047846,NBCU: Open Permission Scheme
+SAEREM, SAE Remediations & Actions,software,,2021-09-22,206586948,SAEREM: Permission Scheme
+THREENET,3Net Migration PCF,software,,2018-10-20,206521287,NBCU: Open Permission Scheme
+DEV406,406 Devops,software,,2021-06-16,206439616,Archived Projects
+AN,[CAPGEMINI] Access NBCU,software,DevOps,2020-07-09,501954853,NBCU: +Stakeholders Permission Scheme
+TESTUPT,[TEST] UPT Global Project,software,Universal Orlando: UPT *,(no issues found),703109744,UPT: Default Permission Scheme
+ASX,Access Digital,software,,2019-11-25,206093788,NBCU: Open Permission Scheme
+HEAP,Account Plan Application,software,Home Entertainment IT,2019-05-30,206047215,Default Permission Scheme
+EMERTECH,ACOE Emerging Tech,software,,2020-05-06,206594068,NBCU: Open Permission Scheme
+AP,ACoE PMO,software,,2019-03-20,206587334,NBCU: Open Permission Scheme
+ADRSCH,AD + RESEARCH (ARCHIVED),software,GMO Projects Archive ,2021-02-16,206091082,Anvato Access & Default Developer scheme
+ADAPI,Ad APIs,software,,2020-02-13,206555394,NBCU: Open Permission Scheme
+ADCABENT,Ad Integration-Cable Entertainment,software,,2021-02-12,206093417,Default Permission Scheme
+ADNBCD,Ad Integration–NBCD,software,,2021-09-22,206554484,Default Permission Scheme
+APOD,Ad Platforms & Ops Dispatch,service_desk,,2021-09-22,206479336,Jira Service Desk Permission Scheme for Project APOSD
+ADSLCLOPS,Ad Sales - Cloud Operations ,service_desk,,2021-09-15,501911051,Jira Service Desk Permission Scheme for Project ADSLCLOPS
+ACM,Ad Sales Custom Apps Cloud Migration,software,,2021-09-21,206571252,HUB/DINT Permission Scheme
+ASID,Ad Sales Integration and Development,service_desk,VCT - Vendor Consolidation Template,2021-09-22,501879979,Jira Service Desk Permission Scheme for Project ASUAR
+ASRS,Ad Sales Reporting Services (MicroStrategy),software,,2021-09-15,206420925,Default Permission Scheme
+SUPPORT,Ad Sales Technology Support - vct,service_desk,VCT - Vendor Consolidation Template,2021-09-22,206079211,SUPPORT: Permission Scheme
+ASNEDD,Ad Sales: NBC Entertainment Dashboard (Domo),software,,2019-02-26,206595238,NBCU: Open Permission Scheme
+ASQOSD,Ad Sales: Quarterly One Sheet (Domo),software,,2019-04-02,206595238,NBCU: Open Permission Scheme
+ADB,Address Book ,software,ZZZ- Archived,2018-10-12,206097300,Archived Projects
+AIR,Ads Integration Registry,software,,2021-09-22,206650216,NBCU: Open Permission Scheme
+BDTC,AdSales Cloud-Ops,software,,2021-07-29,206549689,NBCU: Open Permission Scheme
+RTB,AdSmart Programmatic,software,,2020-09-22,206634868,NBCU: Open Permission Scheme
+AMP,Advanced Media Processor,software,ZZZ- Archived,2017-12-15,206421111,Archived Projects
+ART,Advanced Resort Technology,software,,2019-09-04,703058693,NBCU: Open Permission Scheme
+MPS,Advertising Systems,software,,2021-09-22,206048271,JIRA Service Desk Permission Scheme for Project MPS
+AAE,AE&A - AWS Engagement,software,,2021-09-19,502019294,NBCU: Open Permission Scheme
+AOT,Affiliate Operations Team,service_desk,DevOps,2021-07-12,206572888,Archived Projects
+AIOPS,AI Ops (Enterprise),software,,2021-09-22,206568069,NBCU: Open Permission Scheme
+AIRTBL,AirTable,software,TECHOPS Marketing,2021-09-22,206615712,NBCU: Open Permission Scheme
+IPRM,AllRights,software,GMO Services,2021-09-22,206657972,NBCU: Devtool Access Permission Scheme
+ALLRIGHTS,Allrights Search,software,GMO Services,(no issues found),206657972,NBCU: Devtool Access Permission Scheme
+MAM1,Alpacas,software,GMO MAM,2021-09-21,206481938,NBCU: Open Permission Scheme
+ACOED,Analytics COE Data Cohort,software,,2020-10-16,206527330,Default software scheme
+ACDM,Analytics COE Demand Management,service_desk,,2020-11-01,206527330,JIRA Service Desk Permission Scheme for Project ACDM
+ACOEP,Analytics COE Product/Engagement Cohort,software,,2019-12-30,206527330,Default software scheme
+ANVSDK,Anvato SDK (ARCHIVED),software,GMO Projects Archive ,2020-08-31,206492412,Anvato Access & Default Developer scheme
+AM,API Management,software,ZZZ- Archived,2014-12-19,206404232,Archived Projects
+APPSEC,Application Security,software,,2021-09-15,206601588,NBCU: Open Permission Scheme
+ASSD,Application Security Service Desk,service_desk,DevOps,2021-09-21,206619316,JCNS: Service Desk Permission Scheme 
+APT,APT ,software,,2021-09-13,206001588,NBCU: +Stakeholders Permission Scheme
+MAM,Archive Manager,software,ZZZ- Archived,2020-04-01,elesmana,Archived Projects
+NTPD,Archived -News Technology Product and Design,software,,2021-03-02,206404828,NBCU: Open Permission Scheme
+ARMR,ARMR,software,,2020-05-08,206047196,Archived Projects
+AOSNBC,Aspire,software,,2020-03-03,206522075,Default Permission Scheme
+AL,Asset Library,software,Media Engineering Systems,2021-09-22,206082784,Default Permission Scheme
+ATII,ATI Interactives,software,Universal Creative,2020-08-17,703099162,NBCU: Open Permission Scheme
+ATIA,ATI: Assets,business,Creative ATI,2018-12-11,703099162,ATIA: Permission Scheme
+AEST,ATI: Engineering & Safety Tools,software,Creative ATI,2021-06-24,703099162,AEST: Permission scheme
+ASGMO,ATI: GAP: P557-9,software,Creative ATI,2021-09-14,703099162,NBCU: Open Permission Scheme
+ATIID,ATI: Ideas,software,Creative ATI,2020-08-13,703099162,NBCU: Open Permission Scheme
+AKM,ATI: Knowledge Management,software,Universal Creative,2020-03-20,703099162,NBCU: Open Permission Scheme
+ASPR,ATI: P791,software,Creative ATI,2021-08-31,703099162,NBCU: Open Permission Scheme
+ATIP,ATI: Patents,software,Creative ATI,2021-08-26,703099162,NBCU: Open Permission Scheme
+APSJIRA,ATI: Platform Solutions,software,,2021-09-02,206602661,Default software scheme
+ARCS,ATI: Ride Control Simulation,software,Creative ATI,2020-09-10,703099162,NBCU: Open Permission Scheme
+ATIS,ATI: Simulation: P273MK,software,Creative ATI,2020-11-20,703099162,NBCU: Open Permission Scheme
+ASPL,ATI: Simulation: P901 Lighting,software,Creative ATI,2020-11-10,703099162,NBCU: Open Permission Scheme
+ATI905,ATI: Simulation: P905,software,Creative ATI,2020-04-14,703099162,NBCU: Open Permission Scheme
+ATISP,ATI: Simulation: P942-2,software,Creative ATI,2019-06-19,703099162,NBCU: Open Permission Scheme
+ATISD,ATI: Software Development,software,Creative ATI,(no issues found),703099162,NBCU: Open Permission Scheme
+STEP,ATI: Software Testing Enhancement Program,software,Creative ATI,2021-03-02,703099162,NBCU: Open Permission Scheme
+ATI900,ATI: VASCE: P900,software,Creative ATI,(no issues found),703099162,NBCU: Open Permission Scheme
+ATI902,ATI: VASCE: P902,software,Creative ATI,(no issues found),703099162,NBCU: Open Permission Scheme
+UPRD,ATI:DAx,software,,2021-03-18,703099162,NBCU: Open Permission Scheme
+ATIP526,ATI:P526,software,Creative ATI,(no issues found),703099162,NBCU: Open Permission Scheme
+APAR2,ATL Payment Authorization Request 2.0,software,,2021-04-19,206601669,NBCU: Open Permission Scheme
+ATM2,ATM 2.0,software,,2020-04-01,206636457,NBCU: Open Permission Scheme
+AA,Audience Analyzer,software,,2021-05-05,501593784,NBCU: Open Permission Scheme
+AUG,Audience Graph,software,,2021-09-22,206094244,Default Permission Scheme
+ASASR,Audience Studio - Audience Segment Request,service_desk,DevOps,2020-05-05,206592066,Default: Service Desk Permission Scheme 
+ASDSR,Audience Studio Data Science Research,software,,2021-09-22,206500096,NBCU: Open Permission Scheme
+ASO,Audience Studio Optimization,software,,2020-04-28,206495605,Default Permission Scheme
+ASP,Audience Studio Programmatic,software,,2019-06-12,206500955,Default software scheme
+SSO,Authentication Projects,software,,2019-06-10,501969676,IAM-SSO Permission Scheme
+AETSCRUM,Automation Effort Tracker,software,,2020-01-29,206445665,Default Permission Scheme
+AET,Automation Effort Tracker-1,software,,2018-01-09,206439616,Automation Effort Tracker Permission Scheme
+ENG7,Automation Engineering,software,GMO Engineering,2021-09-22,206523924,NBCU: Open Permission Scheme
+AUT,Automation_Test,software,,2021-01-04,206474041,Archived Projects
+AVID,AVID Project Tracking,software,,2020-12-22,501961079,Default Permission Scheme
+AI,AVOD International,software,,(no issues found),206509216,NBCU: Open Permission Scheme
+AAF,AWS Account Factory,software,DevOps,2019-07-19,206106561,Modified Default Permission Scheme
+AC,AWS Cloudbees,software,,2021-05-17,206439616,Archived Projects
+BAS,BA Salesforce,software,TV Entertainment Technology,2021-09-21,206408622,TVET-Permission Scheme
+BAIES,BAIE Simulation,software,,2020-05-18,703066735,BAIES: Permission Scheme
+SVCS9,Barracudas,software,GMO Services,2021-09-22,206694627,NBCU: Open Permission Scheme
+SVCS8,Barracudas (Archived),software,GMO Projects Archive ,2021-07-26,206465641,NBCU: Open Permission Scheme
+BSP,Basic Scrum Project,software,,2019-04-12,206541541,NBCU: Open Permission Scheme
+ENG1,Basilisk,software,Distribution Engineering,2021-09-22,206563205,NBCU: Open Permission Scheme
+MAM5,Bears,software,GMO MAM,2021-09-22,502106233,NBCU: Open Permission Scheme
+PLYR2,Beetles (Archived),software,GMO Projects Archive ,2020-08-21,206558018,NBCU: Open Permission Scheme
+SVCS5,Belugas (ARCHIVED),software,GMO Projects Archive ,2021-08-04,206465641,NBCU: Open Permission Scheme
+BCO,BFA - BPM - CNBC Automation,software,,2021-03-25,206504472,Archived Projects
+BDDP,BigData Dev Project ,software,,2020-02-05,206595444,NBCU: Open Permission Scheme
+BIZ,BizTalk ,software,IMO *,2020-11-10,127004532,Archived Projects
+SVCS4,Bonitos,software,GMO Services,2021-09-22,206682605,NBCU: Open Permission Scheme
+BOST,BOS Troubleshooting,software,,2021-09-22,206442403,Default software scheme
+BOTS,Bots,software,ZZZ- Archived,2017-07-10,206493704,Archived Projects
+BOXOT,Box Office Transparency,software,,2021-09-22,501939545,NBCU: Open Permission Scheme
+BRANDD,Brand Development,software,,2019-01-31,206597234,NBCU: Open Permission Scheme
+BSA,BSA,software,Universal Orlando: UPT *,2020-08-27,206643202,BSA: Default Permission Scheme
+BA,Business Automation,software,,2020-01-21,206442403,NBCU: Open Permission Scheme
+CDBOS,Business Ops Support ,service_desk,,2021-09-22,206577994,Jira Service Desk Permission Scheme for Project CDBOS
+CETDW,Cable Entertainment Data Warehouse,software,,2021-09-15,206617242,TVET-Permission Scheme
+CAF,CAF Implementation,software,,2020-03-17,206585389,NBCU: Open Permission Scheme
+CF,Cafe,software,TV Entertainment & Distribution Systems,(no permission),206049457,TVET-Permission Scheme
+CAFE,CAFE 2.0,software,,2021-09-22,206049457,Cafe: Open Permission Scheme
+CFRTS,CAFE RTS Service Desk,service_desk,,2021-09-22,206602198,Jira Service Desk Permission Scheme for Project CFRTS
+CD,Campaign Diagnostics,software,,2021-09-20,206057601,NBCU: Open Permission Scheme
+CPT,Capital Planning Tool,software,,2020-02-14,206578557,VCT Read Only Permission Scheme
+MAM2,Capybara,software,GMO MAM,2021-09-22,206556062,NBCU: Open Permission Scheme
+HEITCM,Case Management,software,Home Entertainment IT,2020-01-23,206402692,NBCU: Open Permission Scheme
+CAT,CAT,software,Media Engineering Systems,2021-09-20,206034371,Default Permission Scheme
+PVA,CAT – Creative Approval Tool,software,,2021-09-11,206577508,TVET-Permission Scheme
+CSD,CCA_Sports,software,,2021-08-16,206524062,NBCU: Open Permission Scheme
+CCOE,CCOE,software,,2021-09-22,206602198,NBCU: Open Permission Scheme
+AWS,CCOE AWS SRE,software,,2021-09-21,206602198,NBCU: Open Permission Scheme
+AZS,CCOE Azure SRE,software,,2021-09-22,206602198,NBCU: Open Permission Scheme
+PCFS,CCOE PCF SRE,software,,2021-09-22,206602198,NBCU: Open Permission Scheme
+CDDP,CD Discovery Project,software,Content Distribution Off-Domain,2021-09-22,206577994,CDGT Permission Scheme
+CDEX,CD Distributor New Product,software,Content Distribution Off-Domain,2021-08-04,206577994,CDGT Permission Scheme
+CDLP,CD In Market Project,software,Content Distribution Off-Domain,2021-09-22,206577994,CDGT Permission Scheme
+CDPX,CD Internal Product,software,Content Distribution Off-Domain,2021-09-21,206577994,CDGT Permission Scheme
+CDOP,CD Operations Project,software,Content Distribution Off-Domain,2021-09-22,206577994,CDGT Permission Scheme
+CDPT,CD Partner Tracking,software,,(no issues found),206577994,NBCU: Open Permission Scheme
+CDPR,CD Project Request,software,Content Distribution Off-Domain,2021-09-15,206577994,CDPR Permission Scheme
+CDST,CD Strategic Project,software,Content Distribution Off-Domain,2021-01-19,206577994,CDGT Permission Scheme
+CDSR,CD Support Request,service_desk,,2021-09-22,206459931,Jira Service Desk Permission Scheme for Project CDSR
+CDWE,CD Workflow Enhancement,software,Content Distribution Off-Domain,2021-01-04,206577994,CDGT Permission Scheme
+CAW,CDAS - Affiliates Website,software,,2019-03-20,206450512,Default Permission Scheme
+CDE,CDAS - Engagement,software,,2021-09-16,206073295,Default software scheme
+CMED,CDAS - MEDEA,software,,2017-11-01,206450512,Default Permission Scheme
+CMFX,CDAS - MFX,software,,2019-11-14,206616663,Default Permission Scheme
+RCP,CDAS Integration POC,software,,2018-03-20,501967989,Default software scheme
+CDGAUTH,CDG - Authentication Project,software,Content Distribution On-Domain,2019-06-18,206577994,Archived Projects
+CDGOLY,CDG - Olympics,software,,2018-02-07,206408785,Archived Projects
+CDGAFTV,CDG – Amazon Fire TV,software,Content Distribution On-Domain,2019-04-29,206577994,Archived Projects
+CDGATV,CDG – Apple TV,software,Content Distribution On-Domain,2019-09-11,206577994,Archived Projects
+CDGIOS,CDG – iOS,software,Content Distribution On-Domain,2019-09-26,206577994,Archived Projects
+CDGL,CDG – Launches ,software,,2018-04-20,206408785,Archived Projects
+CDGM,CDG – Metadata,software,,2019-10-31,206408785,CDX: Archived Permission Scheme
+CDGMO,CDG – Monetization,software,,2018-02-07,206408785,CDX: Archived Permission Scheme
+CDGODCP,CDG – On-Domain Cross-Platform,software,Content Distribution On-Domain,2021-09-22,206577994,CDGT Permission Scheme
+CDGO,CDG – Ops,software,,2019-10-18,206408785,CDX: Archived Permission Scheme
+CDGROKU,CDG – Roku,software,Content Distribution On-Domain,2019-04-25,206577994,Archived Projects
+CDGS,CDG – Shortform,software,,2018-02-07,206408785,CDX: Archived Permission Scheme
+CDGV,CDG – Video,software,,2018-07-27,206408785,CDX: Archived Permission Scheme
+CDGDROID,CDG-Android,software,Content Distribution On-Domain,2019-08-29,206408785,Archived Projects
+CDOCR,CDO Clean Room,software,,2021-09-22,206522762,CDOCR: Permission Scheme
+CDOCYBER,CDO Cyber Threat Operations,software,,2021-09-22,206649673,CDOCYBER: Open Permission Scheme
+CDODI,CDO Data Initiatives,software,,2021-08-04,206522762,Default software scheme
+CDODO,CDO DevOps,software,,2021-09-22,501647691,CDODO: Default software scheme
+CIR,CDO Incident Response,software,,2019-10-21,206629272,NBCU: Open Permission Scheme
+CDOPA,CDO Product Analytics,software,,2021-09-22,206522762,Default software scheme
+CDOPM,CDO Program Management,software,,2021-09-20,206522762,Default software scheme
+INTEL,CDO Threat Intelligence,software,,2021-09-22,206414728,INTEL: Permission Scheme
+CDO,CDO-Intake,software,Digital Ad Sales,2021-07-08,206680883,CDO: Permission Scheme
+CFAI,CF AI Optimization,software,,2018-11-29,206521287,NBCU: Open Permission Scheme
+ENG3,Chameleons ,software,GMO Engineering,2021-09-22,206094627,NBCU: Open Permission Scheme
+CRP,Chauffeur Request Portal,software,,2018-03-22,206433010,Default Permission Scheme
+CHRON,Chronos,software,,2020-06-16,206409076,Default Permission Scheme
+CICD,CICD Archive (5/30/20),software,GMO Projects Archive ,2021-07-06,206429025,NBCU: Open Permission Scheme
+CIN,Cineo,software,,2020-12-16,206631096,NBCU: Open Permission Scheme
+HEITCIRF,CIRF,software,Home Entertainment IT,2020-07-27,206402692,NBCU: Open Permission Scheme
+CLOUDE,Cloud Edit,business,,2019-11-18,206544475,NBCU: Open Permission Scheme
+CFGP,Cloud First Global Platform,software,,2020-06-11,501954933,NBCU: Open Permission Scheme
+COTGW,Cloud Onboarding/TransitGW,software,,2020-06-11,206106438,NBCU: Open Permission Scheme
+CLOUDOP,Cloud Operations,service_desk,,2021-09-22,206602198,JCNS: Service Desk Permission Scheme 
+CLOUDSEC,Cloud Security Engineering ,service_desk,,2021-09-22,206625288,Jira Service Desk Permission Scheme for Project CLOUDSEC
+AS,Cloud Services,software,,(no permission),206602198,NBCU: Open Permission Scheme
+CSB,Cloud Services & Brand Support,service_desk,,2021-09-22,206059865,JIRA Service Desk Permission Scheme for Project CSB
+CSA,CLOUD SERVICES – AWS,software,,2021-03-19,206458149,Archived Projects
+CUA,Cloud Usage Analytics,software,,2019-10-16,502089763,NBCU: Open Permission Scheme
+CHR,CloudPath Hotfix Requests,software,,2019-05-13,206523944,NBCU: Open Permission Scheme
+CPPL,CloudPath Player (ARCHIVED),software,GMO Projects Archive ,2021-06-22,206492412,Anvato Access & Default Developer scheme
+CPSDKARCH,Cloudpath SDK Architecture (ARCHIVED),software,GMO Projects Archive ,2019-07-16,206461936,NBCU: Open Permission Scheme
+CPCTVOS,CloudPath tvOS (ARCHIVED),software,GMO Projects Archive ,2019-12-24,206492412,NBCD Viewable Permission Scheme
+CLRSREW,CLRS_Rewrite,software,,2019-06-06,206460172,Default Permission Scheme
+CNBCENG,CNBC Engineering,software,,2021-08-04,223003190,CNBCENG: Default Permission Scheme
+ENG2,Cobras,software,GMO Engineering,2021-09-22,206447284,NBCU: Open Permission Scheme
+CODE,Code Automation,software,,2021-04-30,206496760,Archived Projects
+COES,COE Salesforce,software,,2021-09-22,206047751,COES: Permission Scheme
+COT,COE Test,software,,2021-03-09,206656314,NBCU: Open Permission Scheme
+CC,Commerce Partnerships,software,,2021-09-22,206613345,CC: Open Permission Scheme
+COMA,Communicator App,software,,2020-10-19,206578181,NBCU: Open Permission Scheme
+CM,Compass,software,,2021-04-09,206494569,Compass Permission Scheme
+CRO,COMPASS - RSN Onboarding,software,,2017-03-22,206474502,Default Permission Scheme
+CTE,COMPASS - TeleXitos Enhancements,software,,2016-01-12,206424934,Default Permission Scheme
+CTP,COMPASS - TVE Phase 2.0,software,,2016-04-29,206476218,Default Permission Scheme
+CD2C,Compass D2C,software,,2021-09-22,206659877,NBCU: Devtool Access Permission Scheme
+CFR,Compass Finance Upgrade,software,,2020-03-24,501881742,Default software scheme
+COMP,Compass Performance Improvement,software,,2019-05-08,206103526,NBCU: Devtool Access Permission Scheme
+CRUF,Compass Re-platform User Feedback,software,,2020-05-14,206493389,Default software scheme
+CR,Compass Re-platforming,software,,2020-08-06,206521177,Compass Permission Scheme
+CORP,Compass Refactor Pod,software,,2020-03-13,206529987,NBCU: Devtool Access Permission Scheme
+CRMPBIRS,COMPASS Reports Migration (PBIRS),software,,2019-12-30,206428913,Compass Permission Scheme
+CRMT,COMPASS Reports Migration to Power BI Report Server,software,,2018-03-19,502007480,Compass Permission Scheme
+CRI,Compass Rightsline Integration,software,,2018-01-05,501537758,NBCU: Open Permission Scheme
+CU,Compass UAR,software,,2021-04-28,501959619,Compass Permission Scheme
+CSSU,"COMPASS, Telly & CPT SQL Server 2016 Upgrade",software,,2017-04-13,501959619,Default software scheme
+CRE,Compass-Re-platforming Functional ,software,,2019-05-02,206493429,CRE Permission Scheme
+COMD,Comscore Digital,software,,2021-07-30,501593784,NBCU: Open Permission Scheme
+CONA,Concerto (ARCHIVED),software,GMO Projects Archive ,2018-10-05,206465641,NBCU: Open Permission Scheme
+CONP,Concerto Program (ARCHIVED),software,GMO Projects Archive ,2020-10-06,206109058,NBCU: Devtool Access Permission Scheme
+CONC,Concourse,software,,2018-05-31,206495809,NBCU: Open Permission Scheme
+TL4,Condors,software,GMO Translator,2021-09-22,206618444,NBCU: Open Permission Scheme
+CON,Connectivity,service_desk,,2021-08-30,502198438,JIRA Service Desk Permission Scheme for Project CON
+COIN,Consumer Intelligence,software,,2018-11-15,206427307,NBCU: Open Permission Scheme
+CIP,Consumer Intelligence Platform,software,,2021-09-22,206651274,NBCU: Open Permission Scheme
+CONMAN,Container Management,software,,2019-03-07,206521287,NBCU: Open Permission Scheme
+COPT,Content Planning Tool,software,,2021-09-21,206494569,NBCU: Open Permission Scheme
+CLM,Contract Lifecycle,software,GMO Services,2021-09-20,206465641,NBCU: Open Permission Scheme
+CRSEARCH,Contracts and Rights Search,software,,2021-09-08,206657972,CRSEARCH: Permission Scheme
+CVSDK,Core Video SDK,software,,2021-09-01,206641222,CVSDK: Open Permission Scheme
+CVSDKKPI,Core Video SDK KPI,software,,(no issues found),206693682,CVSDK: Open Permission Scheme
+CDSC,Corporate Decision Sciences,software,,2021-07-12,206681263,NBCU: Open Permission Scheme
+INSIGHTS,Corporate Measurement & Insights Team,software,,2020-06-15,206108430,NBCU: Open Permission Scheme
+CI,Counterpoint Implementation,software,,2019-05-27,206047555,Default Permission Scheme
+COVID,COVID Dashboard,software,,2020-03-30,206420925,NBCU: Open Permission Scheme
+COVIDTEST,COVID Testing Tracker,software,,2021-07-08,206656006,NBCU: Open Permission Scheme
+CPCCNBCIOS,CPC CNBC IOS (ARCHIVED),software,GMO Projects Archive ,2020-09-25,arthur_akselrod,Anvato Access & Default Developer scheme
+CPCNBCDIOS,CPC NBCD IOS (ARCHIVED),software,GMO Projects Archive ,2020-09-25,arthur_akselrod,Anvato Access & Default Developer scheme
+CBAS,CPG BI & Analytics Solutions,software,,2020-07-21,206080965,Archived Projects
+CBD,CPG Brand Development,software,,2020-04-15,206522034,Modified Default Permission Scheme
+CAR,Creative Asset Request,software,Home Entertainment IT,2021-06-07,206402692,NBCU: Open Permission Scheme
+CRM,CRM,service_desk,DevOps,2020-10-29,206651274,JCNS: Service Desk Permission Scheme 
+PKI,Crypto Services,software,,2021-09-22,206601782,NBCU: Open Permission Scheme
+CST,CS&T,software,,2018-03-29,206108860,Default Permission Scheme
+CSMAC,CSM-A-Cloud Services,business,,2018-11-15,206458149,NBCU: Open Permission Scheme
+CSMAG,CSM-A-Governance,business,,2019-05-24,206458149,NBCU: Open Permission Scheme
+CCRP,CTS - Rationalized Player (ARCHIVED),software,GMO Projects Archive ,2019-01-14,206526038,Anvato Access & Default Developer scheme
+COAR,Cyber Orchestration and Automation,software,,2021-08-23,206586948,NBCU: Open Permission Scheme
+CYBER,Cyber Security,software,,2019-02-16,206557112,NBCU: Open Permission Scheme
+CSMA,Cyber Security Manual Assessments,software,,2021-09-22,206579620,CSMA: Permission Scheme
+CSPE,Cyber Security Platform Engineering,software,,2021-09-22,206671766,NBCU: Open Permission Scheme
+CSPLAT,Cyber Security Platforms (CSPLAT) ,software,,2021-09-22,206557112,NBCU: Open Permission Scheme
+CSR,Cyber Security Risk ,software,,2019-04-10,206601782,NBCU: Open Permission Scheme
+SOX,Cyber SOX UAR Program,software,,2021-07-02,206604964,NBCU: Open Permission Scheme
+CYWKGPS,Cyber Working Groups,software,,2020-10-15,206655230,NBCU: Open Permission Scheme
+SECTECH,Cybersecurity Technology,software,,2018-09-14,206557112,NBCU: Open Permission Scheme
+D2CCOM,D2C-COMM,software,,2020-07-11,206618790,NBCU: Open Permission Scheme
+DAIS,DAISY,software,,2021-08-25,206097300,Default software scheme
+DCE,DAISY CE,software,ZZZ- Archived,2017-12-13,206097300,Archived Projects
+DAISYU,DAISY NBCUni,software,ZZZ- Archived,2020-09-14,206416832,Archived Projects
+DAPRSD,DAPR-Service Desk,service_desk,Digital Ad Sales,2021-07-01,206554484,Jira Service Desk Permission Scheme for Project DAPRSD
+DASANI,DASANI,software,ZZZ- Archived,2017-12-15,206411520,Archived Projects
+DDXD,Data Driven Experience Design Optimization,software,Universal Orlando: UPT *,2021-09-22,206474223,BSA: Default Permission Scheme
+DE,Data Enablement,software,,2019-10-14,206424898,NBCU: Open Permission Scheme
+DF21,Data Frameworks 2021,software,,2021-06-22,206639818,NBCU: Open Permission Scheme
+DPFILM,Data Privacy - Film,software,,2021-09-22,206691181,NBCU: Open Permission Scheme
+DPA,Data Products & Analytics,service_desk,,2021-09-22,206624340,Jira Service Desk Permission Scheme for Project DPA
+DEG,Database Support,software,MTS Support,2020-09-21,206102679,PTG - Database Support Permission Scheme
+DBRICKS,DataBricks Migration,software,,2020-09-16,206549689,NBCU: Open Permission Scheme
+DDS,Dataminer Dev Squad,software,,2021-02-23,206595302,NBCU: Open Permission Scheme
+DIR,Dataset Intake Requests,service_desk,,(no issues found),206629391,Jira Service Desk Permission Scheme for Project DIR
+DAVD,DAVD,software,,2021-09-22,206585041,Default Permission Scheme
+DOA,Day Of Air,software,Media Engineering Systems,2021-04-09,206094159,Default Permission Scheme
+EAE,DCOE Coordination,software,,2019-08-05,206551161,NBCU: Open Permission Scheme
+DECOE,DE COE,software,,2019-04-03,206424898,NBCU: Open Permission Scheme
+DEDEVOPS,DE-DevOps,software,Distribution Engineering,2021-06-29,206563205,NBCU: Open Permission Scheme
+DFE,Deal Force Enhancement,software,,2018-04-13,206047751,NBCU: Open Permission Scheme
+DSBI,Decision Sciences Business Intelligence,software,,2020-06-08,206631283,NBCU: Open Permission Scheme
+DSE,Decision Sciences Engineering,software,,2021-09-21,206557769,NBCU: Open Permission Scheme
+DWR,Demo Waste Reduction,software,,2021-09-20,206680888,CDODO: Default software scheme
+DCOE,Dev COE,software,,2021-08-26,206103526,NBCU: Devtool Access Permission Scheme
+DCS,Dev CoE - STORM Mobile (DCS),software,,2021-01-08,206408475,NBCU: Open Permission Scheme
+DCP,Development CoE Program,software,,2019-10-21,206524109,NBCU: Open Permission Scheme
+DVOPS,DevOps,software,,(no permission),206106561,Project-scoped software scheme
+PERFORCE,DevOps Perforce,software,,2018-10-19,501954853,NBCU: Open Permission Scheme
+SPLUNK,DevOps Splunk,software,,2018-10-18,501954853,NBCU: Open Permission Scheme
+DFOR,DForce,software,,2021-09-22,206402692,DFOR: Permission Scheme
+DETJ,Digital & Emerging Technology project,software,,2018-11-08,206504626,NBCU: Open Permission Scheme
+DAD,Digital Ad Documentation,software,Digital Ad Sales,2021-09-21,206415560,Default software scheme
+DAPAND,Digital Ad Product Android,software,Digital Ad Sales,2021-09-22,206554484,DAPX: Permission Scheme
+DAPD,Digital Ad Product Distribution,software,Digital Ad Sales,2021-09-22,206652497,DAPX: Permission Scheme
+DAPI,Digital Ad Product Incidents,software,Digital Ad Sales,2021-09-22,206415560,DAPX: Permission Scheme
+DAPPLE,Digital Ad Product iOStvOS,software,Digital Ad Sales,2021-09-22,206554484,DAPX: Permission Scheme
+DAPNC,Digital Ad Product NBC & Cable,software,Digital Ad Sales,2021-07-02,206554484,DAPX: Permission Scheme
+DAPEN,Digital Ad Product News & Entertainment News,software,Digital Ad Sales,2021-08-04,206415560,DAPX: Permission Scheme
+DAPOTT,Digital Ad Product OTT,software,Digital Ad Sales,2021-09-22,206554484,DAPX: Permission Scheme
+DAPP,Digital Ad Product Portfolio,software,Digital Ad Sales,2021-09-22,206415560,DAPX: Permission Scheme
+DAPSH,Digital Ad Product Sports & Hispanic,software,Digital Ad Sales,2021-06-18,206415560,DAPX: Permission Scheme
+DAPWEB,Digital Ad Product Web,software,Digital Ad Sales,2021-09-22,206554484,DAPX: Permission Scheme
+DAPROCK,Digital Ad Products 30 Rock,software,Digital Ad Sales,2021-09-22,206554484,DAPX: Permission Scheme
+DAPPREC,Digital Ad Products Parks and Rec,software,Digital Ad Sales,2021-09-22,206554484,DAPX: Permission Scheme
+DAPSEIN,Digital Ad Products Seinfeld,software,Digital Ad Sales,2021-09-22,206554484,DAPX: Permission Scheme
+DAPOFF,Digital Ad Products The Office,software,Digital Ad Sales,2021-09-16,206554484,DAPX: Permission Scheme
+DAS,Digital Ad Sales,software,,2021-06-02,206420617,Default Permission Scheme
+DAPPM,Digital Ad Sales Programmatic,software,Digital Ad Sales,2021-01-25,206554484,DAPX: Permission Scheme
+DAPR,Digital Ad-Sales PMO Request,software,Digital Ad Sales,2021-09-22,206576642,DAPX: Permission Scheme
+DAPO,Digital Ad-Sales Project Olympics,software,Digital Ad Sales,2019-09-23,206415560,DAPX: Permission Scheme
+DAILIES,Digital Dailies,software,ZZZ- Archived,2017-11-13,206097300,Archived Projects
+DDT,Digital Data and Tagging,software,Universal Orlando: UPT *,2021-09-22,702436195,DDT: Default Permission Scheme
+PO,Digital Decision Board,software,,2021-05-27,206471375,NBCU: Open Permission Scheme
+DIGITALF,Digital Finance Reporting ,software,,2020-05-27,206585086,NBCU: Open Permission Scheme
+DINT,Digital Intelligence ,software,,2021-09-14,206509035,HUB/DINT Permission Scheme
+DNOCB,Digital NOC Build,software,,2018-03-06,206569752,NBCU: Open Permission Scheme
+DNOCS,Digital NOC Support ,service_desk,,2021-09-22,206575238,JIRA Service Desk Permission Scheme for Project DNOCS
+DOQ,Digital Ops QA,software,,2021-09-22,206450627,Default Permission Scheme
+DPC,Digital Pixel Certification,software,,2020-12-15,206108028,NBCU: Open Permission Scheme
+DPS,Digital Programs,service_desk,,2021-06-02,206471375,Jira Service Desk Permission Scheme for Project DPS
+DP,Digital Projects,software,,2021-01-11,206638645,NBCU: Open Permission Scheme
+DPTE,Digital Properties Technology Enablement,software,,2020-01-08,206645409,NBCU: Open Permission Scheme
+DQAT,Digital QA Test,software,Digital Ad Sales,2020-02-06,206523658,DAPX: Permission Scheme
+DRC,Digital Release Calendar,software,F & WC TV,2021-08-20,206057601,Default Permission Scheme
+DIGSRV,Digital Services (Archive),software,GMO Projects Archive ,2020-09-25,206465641,NBCU: Open Permission Scheme
+DSE2E,Digital Services End to End (ARCHIVED),software,GMO Projects Archive ,2021-01-08,206109058,NBCU: Open Permission Scheme
+DSS,Display Systems,software,,2021-09-22,206108028,Default Permission Scheme
+DPE,Distribution Engineering,service_desk,Distribution Engineering,2021-09-22,206531336,JCNS: Service Desk Permission Scheme 
+DMC,DMC ,software,Digital Ad Sales,2021-09-22,206650216,DAPX: Permission Scheme
+SVCS7,Dolphins,software,GMO Services,2021-09-22,206650218,NBCU: Open Permission Scheme
+MFAL,Domestic Broadcast (ARCHIVED),software,GMO Projects Archive ,2020-09-25,206615712,NBCU: Open Permission Scheme
+DNB,DOMO New Business,software,,2020-03-17,203012147,VCT Read Only Permission Scheme
+DOM,DomTheatricalDist,software,,2021-09-01,206094100,NBCU: +Stakeholders Permission Scheme
+DMPA,DPIM Mobile Platform Archive,software,GMO Projects Archive ,2019-01-14,206465641,NBCU: Open Permission Scheme
+MDS2,DPIM Telemundo Archive,software,GMO Projects Archive ,2018-05-04,206465641,NBCU: Open Permission Scheme
+SVCS2,Dragonets,software,GMO Services,2021-09-22,206686389,NBCU: Open Permission Scheme
+PLYR3,Dragonflies (Archived),software,GMO Projects Archive ,2021-07-27,206634382,NBCU: Open Permission Scheme
+DCM,DreamWorks Confluence Migration ,software,,2019-02-19,206541541,NBCU: Open Permission Scheme
+DRF1,DRF,service_desk,DevOps,2021-09-14,206674143,JCNS: Service Desk Permission Scheme 
+DUBR,DRF Archive,software,,2019-09-24,206620139,Default Permission Scheme
+DRV,DRIVE-RTS,software,TV Entertainment Technology,2020-05-28,206047939,TVET-Permission Scheme
+DRUP,Drupal-POC (ARCHIVED),software,GMO Projects Archive ,2020-05-04,206464934,Default software scheme
+DCOAO,Dry Creek On Air Operations,service_desk,,2019-02-04,206104675,JIRA Service Desk Permission Scheme for Project DCCE
+DCST,Dry Creek Solutions Team,software,,2021-08-09,206570603,DCST & PVI Permission Scheme
+DCCE,DryCreek Core Engineering,service_desk,,2021-07-13,206578801,JIRA Service Desk Permission Scheme for Project DCCE
+DC,DTC Cyber,service_desk,,2021-09-21,206621251,DC: Jira Service Desk Permission Scheme
+EOLS,E! Online Latam Support,service_desk,,(no permission),206102930,Jira Service Desk Permission Scheme for Project EOLS
+EAS,EA_Sharepoint,software,,2019-11-04,206093781,NBCU: Open Permission Scheme
+TLMAM,Eagles (ARCHIVED),software,GMO Projects Archive ,2021-07-09,206454347,NBCU: Open Permission Scheme
+EC,Ecoview,software,,2019-08-06,502089763,NBCU: Open Permission Scheme
+MFAF,Elephant (ARCHIVED),software,GMO Projects Archive ,2020-09-25,206097347,NBCU: Open Permission Scheme
+ETRE,Employee Time-Off Request – ETR,software,,2021-02-19,206404975,Default software scheme
+ETR,Employee Timeoff Request. ,software,,2017-10-06,206522239,NBCU: Open Permission Scheme
+EMTLRM,EMT/LRM,software,GMO Services,2021-09-22,206431856,NBCU: Open Permission Scheme
+E2EQA,End to End US QA Team,software,,(no issues found),206681920,NBCU: Open Permission Scheme
+APIM,Enterprise API Management,software,,2020-03-13,206465953,VCT Read Only Permission Scheme
+APIMSD,Enterprise API Management Service Desk,service_desk,DevOps,2019-10-04,206438176,JCNS: Service Desk Permission Scheme 
+EAEA,Enterprise Apps Engineering & Architecture,software,,2021-09-22,206682245,EAEA: Permission Scheme
+ENG6,Enterprise Engineering,software,GMO Engineering,2021-09-22,206107280,NBCU: Open Permission Scheme
+EWAF,Enterprise WAF,software,,2019-05-02,127000486,Default software scheme
+ESM,EShoots,software,ZZZ- Archived,2017-08-14,206097300,VCT Read Only Permission Scheme
+ETS,ET Server Refresh Program 2019,software,,2021-02-04,206428130,NBCU: Open Permission Scheme
+MAM8,Evertz Engineering,software,GMO MAM,(no issues found),206531312,NBCU: Open Permission Scheme
+EV,EVRICK ,software,UCP,2019-04-30,703081675,NBCU: Strict Permission Scheme
+AMAGT,Example Scrum Project,software,ZZZ- Archived,2018-06-27,206427031,Archived Projects
+EXA,Executive Analytics,software,GMO Custom Projects,2021-09-17,206528105,NBCU: Open Permission Scheme
+ESA,Executive Support App,software,ZZZ- Archived,2018-01-29,206453913,Archived Projects
+FMX,FatMix,software,F & WC TV,2019-01-30,206091807,Default Permission Scheme
+FEDM,FEIT Datamart,software,,2018-07-18,206066240,NBCU: Open Permission Scheme
+FAES,Film Analytics Enhancements and Support,software,,2021-09-22,206603627,NBCU: Open Permission Scheme
+FAT,Film Analytics Talend – ELTSuit Migration,software,,2020-10-29,206603627,NBCU: Open Permission Scheme
+FTVISO,Film and TV ISO,service_desk,DevOps,2021-05-14,206551792,FTVISO: Service Desk Permission Scheme 
+FMSD,Film Marketing IT Service Desk,service_desk,,2021-09-16,206620139,Jira Service Desk Permission Scheme for Project FMSD
+FPSR,Film PSR,software,,2021-09-20,206066240,NBCU: Open Permission Scheme
+FSO,Film Strategy 2020,software,,2020-04-08,206620139,NBCU: Open Permission Scheme
+FID,Finance Dashboard,software,,2017-09-19,206420925,Default software scheme
+FIN2,Finance Platform 2,software,GMO Services,(no issues found),206465641,NBCU: Open Permission Scheme
+FT,Finance Transformation,software,,2018-01-23,206420925,NBCU: Open Permission Scheme
+FIRMA,FIRMA,software,ZZZ- Archived,2016-07-07,206411520,Archived Projects
+MG,Flash,software,,2018-09-14,206066240,Default Permission Scheme
+FMADS,FMA - Digital Scorecard,software,,2019-11-26,206602426,Default software scheme
+FTM,FMA Title Matching,software,Home Entertainment IT,2019-01-09,206402692,NBCU: Open Permission Scheme
+FIP,Focus Insider Program,software,,2020-01-24,206602426,NBCU: Open Permission Scheme
+FPA,Focus Picture Analytics,software,,2018-02-22,206602426,NBCU: Open Permission Scheme
+FMD,Forecast Manager - Digital,software,,2021-06-29,206483847,NBCU: Open Permission Scheme
+FTOOL,Forecasting Tool,software,,2020-02-20,206602426,NBCU: Open Permission Scheme
+FRAME,Frame Integration,software,GMO Services,(no issues found),206492412,NBCU: Open Permission Scheme
+FWP,Freewheel Platform,software,,2021-08-16,206108028,Default software scheme
+FWS,Freewheel System,software,,2021-09-22,206108028,Default Permission Scheme
+FSCT,Fulfillment SQE Core Team,software,GMO Engineering,2021-09-22,206656001,FSCT: Open Permission Scheme
+FWEB,Future Web,software,,2020-01-28,206548857,NBCU: Open Permission Scheme
+FWD,FWD,software,,2021-09-22,206558018,NBCU: Open Permission Scheme
+AH,GAHS Platform,business,,2020-06-12,206402232,Default Permission Scheme
+GBS,GBS,software,,2020-12-04,206599996,Default software scheme
+GBSPCR,GBS LMS & Licensee Portal - Salesforce,software,,2021-09-07,206047751,NBCU: Open Permission Scheme
+GCP,GCP and Big Query Analytics,software,,2021-09-22,206620139,NBCU: Open Permission Scheme
+GEN,Genie,software,,2021-01-22,206066240,Default Permission Scheme
+MAM7,Giraffes,software,GMO MAM,2021-09-22,206608318,NBCU: Open Permission Scheme
+GLAS,GLAS,software,Digital Ad Sales,2021-09-22,206622306,DAPX: Permission Scheme
+GAM,Global Asset Management,service_desk,DevOps,2021-09-22,206585389,JCNS: Service Desk Permission Scheme 
+GFA,Global FIlm - Airtable,software,,2021-09-14,206605717,NBCU: Open Permission Scheme
+GIC,Global Infra Capacity 2021,software,,2021-04-02,206428130,NBCU: Open Permission Scheme
+GAHSGP,Global Platform ,software,,2020-06-11,206521287,NBCU: Open Permission Scheme
+GLOBTECH,Global Tech,service_desk,DevOps,2021-09-22,206415015,GLOBTECH: Permission Scheme
+ENG4,Global Technology,software,GMO Engineering,2021-08-17,206415015,NBCU: Open Permission Scheme
+GTM,Global Title Management (DO NOT USE),software,F & WC TV,2020-07-23,206449933,Default Permission Scheme
+GTMSD,Global Title Management Service Desk,service_desk,F & WC TV,2021-09-22,206073629,JIRA Service Desk Permission Scheme for Project GTMSD
+GUXUI,Global UXUI,software,,2021-09-22,703014540,GUXUI: Open Permission Scheme
+POPCORN,Global UXUI Experience Design,software,Universal Creative,2021-03-12,702382857,NBCU: Open Permission Scheme
+GA,GMO Automation (ARCHIVED),software,GMO Projects Archive ,2019-07-16,206556493,CPC Default Permission Scheme
+GMOCC,GMO Change Control,service_desk,GMO Custom Projects,2021-04-14,206651939,Jira Service Desk Permission Scheme for Project GMOCC
+GMETS,GMO Media Eng. Tech Solutions,business,,2020-02-07,206096906,NBCU: Open Permission Scheme
+GMOR,GMO Metrics Reports,software,,2019-09-05,206482785,NBCU: Strict Permission Scheme
+GMOPM,GMO PMO,software,GMO Portfolio Projects,2021-09-17,206109058,NBCU: Open Permission Scheme
+GMOS,GMO Support Central,software,Dry Creek: GMOS *,2021-09-22,206433364,NBCU: Strict Permission Scheme
+GDP,GMO – Digital Products,software,,2020-08-21,206081998,Default Permission Scheme
+GMOF,GMOFP TEST ACCOUNT (ARCHIVED),software,GMO Projects Archive ,2021-07-27,206109058,NBCU: Open Permission Scheme
+GDS,Golf Digital Scoring,software,,2020-07-08,206532518,GDS: Permission Scheme
+GDX,Golf Digital Xamarin,software,,2020-08-27,206525411,NBCU: Open Permission Scheme
+GOLF,Golfchannel.com,software,,2020-09-22,206473126,NBCU: Open Permission Scheme
+GNIVR,GolfNow – IVR Project,software,,2021-01-15,206047751,NBCU: Open Permission Scheme
+GSD,Google Services Dev (ARCHIVED),software,GMO Projects Archive ,2020-07-13,206447821,Anvato Access & Default Developer scheme
+GRAM,GRAM,software,Media Engineering Systems,2021-09-15,206034371,Default Permission Scheme
+PLYR4,Grasshoppers (Archived),software,GMO Projects Archive ,2020-08-21,206599627,NBCU: Open Permission Scheme
+GRAS,Grasshoppers Archive (4/30/20),software,GMO Projects Archive ,2020-12-02,206599627,NBCU: Open Permission Scheme
+GRIDS,GRIDS,software,TV Entertainment Technology,2018-02-26,206047939,TVET-Permission Scheme
+GTDI,GTDI Development Board,software,,2021-09-22,206047751,COES: Permission Scheme
+GTE,Guest Tracker Enterprise,software,,2020-09-03,206453680,Default Permission Scheme
+UXUIBLD,GUIUX Build,software,,2021-08-19,703132110,UXUIBLD: Open Permission Scheme
+UXUIRUN,GUIUX Run,software,,(no issues found),703132110,UXUIRUN: Open Permission Scheme
+HAYU,Hayu,software,,2019-02-28,206587218,NBCU: Open Permission Scheme
+HFT,HEIT Fix Test,software,VCT - Vendor Consolidation Template,2020-04-10,206402692,NBCU: +Stakeholders Permission Scheme
+HPSCT,HEIT Production Support Core Team,software,Home Entertainment IT,2020-01-22,206599970,Archived Projects
+HCWFR,Hermes – CMS Workflow for Research,software,,2016-11-07,203012147,Default Permission Scheme
+VMI,Home Entertainment – Vendor Management Inventory,software,,2016-05-04,206065296,Default Permission Scheme
+HPA,HPA,software,ZZZ- Archived,2013-11-07,206404232,Archived Projects
+HRT,HR Transformation,software,,2021-09-22,703103094,NBCU: Open Permission Scheme
+HRTT,HR Transformation Test ,software,,2019-09-27,703103094,NBCU: Open Permission Scheme
+HUB,Hubble,software,,2021-09-22,206509035,HUB/DINT Permission Scheme
+I2AP,I2A Project,software,,2020-03-20,206618055,NBCU: Open Permission Scheme
+ISD,IAM Strategy & Design,software,,2021-06-15,206608434,NBCU: Open Permission Scheme
+IA,Idea 2 Air,software,TV Entertainment Technology,2019-07-31,206103529,TVET-Permission Scheme
+IAM,Identity & Access Management,software,,2021-09-22,206601782,IAM: Open Permission Scheme
+IDENT,Identity (ARCHIVED),software,GMO Projects Archive ,2020-09-25,206404259,NBCU: Open Permission Scheme
+IP,IDM Portal,software,ZZZ- Archived,2016-05-26,206424299,Archived Projects
+IM,IM,software,ZZZ- Archived,2016-10-14,501922112,Archived Projects
+IMAESTRO,iMaestro Implementation,software,,2019-06-17,206047555,VCT Read Only Permission Scheme
+ICM,iManage Cloud Migration,software,,2020-03-27,206637811,NBCU: Open Permission Scheme
+IMOP,IMO - Post Production Support,service_desk,IMO *,2021-09-22,127002688,JIRA Service Desk Permission Scheme for Project IMOPS
+SISY,IMO Single System,software,,(no issues found),206578383,NBCU: Open Permission Scheme
+IMOGM,IMOG Mediator,software,,2020-07-15,206083107,Default Permission Scheme
+IMTS,IMT Solutions,software,IMO *,2021-01-13,206438379,NBCU: Open Permission Scheme
+CCI,Insights,software,,2019-11-20,206103526,NBCU: Devtool Access Permission Scheme
+INTSD,Integration Services Development,software,,2021-02-12,501944713,VCT Read Only Permission Scheme
+ISRTS,Integration Services – RTS,software,,2021-02-12,206433874,Archived Projects
+IPB,Interactive Platform Backend,software,,2021-09-21,703113299,NBCU: Open Permission Scheme
+IMO,International Media Operations,service_desk,IMO *,2021-09-21,206578383,JIRA Service Desk Permission Scheme for Project IMO
+IMT,International Media Technology,software,IMO *,2021-09-22,206578383,IMT: Permission Scheme
+LEGALOPS,International Strategy for 2020 - Legal Ops,software,,2019-11-14,206628016,NBCU: Open Permission Scheme
+IRIS,IRIS,software,,2020-03-02,206047555,Default Permission Scheme
+IRISES,IRIS ELASTIC SEARCH,software,,2017-04-26,206047555,Default software scheme
+ISCI,ISCI,software,,2018-06-21,206443192,Default Permission Scheme
+ISWU,ISWU 2021,software,,2021-09-22,206622299,Default software scheme
+ITA,IT Analytics,software,,2021-09-21,502089763,NBCU: Open Permission Scheme
+JTP,JCNS-8650 Test Project,software,,2021-03-15,206569869,Archived Projects
+JCNS,Jira & Confluence NBCU Support,service_desk,DevOps,2021-09-22,206541541,JCNS: Service Desk Permission Scheme 
+MAM3,Koalas,software,GMO MAM,2021-09-22,502019699,NBCU: Open Permission Scheme
+ENG5,Komodos,software,GMO Engineering,2021-09-14,206465641,NBCU: Open Permission Scheme
+LAC,LACUNA,software,IMO *,2021-03-30,127004532,Archived Projects
+LACB,Lacuna BAU,software,IMO *,2021-09-13,127004532,LACUNA Permission Scheme
+LMK,LANDMARK ,software,IMO *,2021-04-28,206470116,NBCU: Open Permission Scheme
+LBT,LBT,software,,2021-05-04,206412074,NBCU: Open Permission Scheme
+LT,Leave Tracking,software,DevOps,2019-04-01,206541541,Default Permission Scheme
+TC,Legal Workflow Automation,software,,2020-09-22,206571304,Default software scheme
+LB,Lightbox,software,TV Entertainment Technology,2021-09-22,206047833,TVET-Permission Scheme
+LBSD,LightBOX Service Desk,service_desk,DevOps,2020-02-07,501644194,Default: Service Desk Permission Scheme 
+ADS,Linear Ad Standards,software,,2021-09-22,206106642,NBCU: Open Permission Scheme
+CLS,Linear Scheduling,software,Compass,2021-09-22,206494569,NBCU: Open Permission Scheme
+LIONF,Lionfish,software,GMO Services,2021-09-22,206465641,NBCU: Open Permission Scheme
+LSM,Live Shot Manager,software,,2021-09-22,206060647,NBCU: Open Permission Scheme
+LMW,LMW,software,,2021-09-22,206694562,LMW: Default software scheme
+LMWPOC,LMW-POC,software,,2017-10-11,501593784,Default software scheme
+TL1,Macaws (ARCHIVED),software,GMO Projects Archive ,2020-09-24,206094159,NBCU: Open Permission Scheme
+MAFN,MAFN - Marketing App For NBC Ent,software,,2021-08-30,206617242,TVET-Permission Scheme
+MAG,MAGIC,software,F & WC TV,2021-09-22,206094100,Magic Permission Scheme
+MM,Magic MicroStrategy,software,,2021-09-22,501939545,NBCU: Open Permission Scheme
+MRPE,Magic Release Planning Enhancements,software,,2021-09-22,501939545,MRPE: Open Permission Scheme
+MAGHE,MagicHE,software,,2020-08-10,206066240,Default Permission Scheme
+MAGMICRO,MagicMicrostrategy,software,,2021-02-11,206066240,Default Permission Scheme
+MAP,MagicPostlive,software,,2018-07-31,206066240,Magic Permission Scheme
+SVCS6,Manatees,software,GMO Services,2021-09-22,206615712,NBCU: Open Permission Scheme
+MAPIP,Mapping-IP,software,,2021-08-19,206655523,Default software scheme
+MDAR,Marketing Analytics,software,Marketing,2021-09-22,206465641,NBCU: Open Permission Scheme
+MCS,Marketing Communications System,software,Home Entertainment IT,2017-10-20,206047215,Default Permission Scheme
+MSCS,Marketing Supply Chain Support,service_desk,,(no permission),206103543,Jira Service Desk Permission Scheme for Project MSCS
+MAR,MarketingFlashReport,software,F & WC TV,2021-09-22,206430256,Default Permission Scheme
+BESRV,Marlins (ARCHIVED),software,GMO Projects Archive ,2020-08-31,206618857,NBCU: Open Permission Scheme
+MASE,MASE,software,Media Engineering Systems,2021-09-15,206034371,Default Permission Scheme
+MPB,Master Product Backlog,software,,2020-08-21,206493058,Default Permission Scheme
+MTP,Matts Test Project,software,DevOps,2021-02-24,206623204,NBCU: Strict Permission Scheme
+MTP2,Matts Test Project 2,software,DevOps,2021-02-01,206606136,NBCU: Strict Permission Scheme
+MFA,Media Fulfillment Automation (ARCHIVED),software,GMO Projects Archive ,2021-09-07,206482785,Archived Projects
+MMP,Media Pulse,software,,2018-03-07,206077058,Media Pulse permission scheme
+MV,Media Village,software,TV Entertainment Technology,2021-08-30,206577508,TVET-Permission Scheme
+MVR,Media Village Refactoring,software,TV Entertainment Technology,2015-10-20,206047833,TVET-Permission Scheme
+ATV,Media Workflow Automation,software,,2019-12-02,206083107,Default Permission Scheme
+MB,MediaBroker,software,Media Engineering Systems,2021-09-21,206082784,Default Permission Scheme
+MED,Mediafly,software,,(no issues found),206448109,Default software scheme
+MFAN,Mediator QA Automation (ARCHIVED),software,GMO Projects Archive ,2020-09-25,206591738,NBCU: Open Permission Scheme
+MES,MES Projects,software,Media Engineering Systems,2021-06-28,206060647,Default Permission Scheme
+EMAIL,Messaging,software,,2019-08-21,206427031,NBCU: Open Permission Scheme
+MS,Metadata Strategy,software,,2018-06-21,206462425,Archived Projects
+MFO,Mobile Food Ordering,software,,2020-02-07,206556675,Default software scheme
+MODE,MODE,software,ZZZ- Archived,(no permission),206419392,Archived Projects
+HEITMPS,Monthly Planner Slides,software,Home Entertainment IT,2018-08-28,206402692,NBCU: Open Permission Scheme
+MRB,MoveCommand Re-build,software,,2016-10-19,206103526,MoveCommand Permission Scheme
+DTIIG,Movies Everywhere (Innovation Gateway),software,,2018-01-16,206501913,NBCU: Open Permission Scheme
+MPSSUP,MPS and Video Ads Module (VAM) Support Requests,service_desk,,2021-09-22,206048271,JIRA Service Desk Permission Scheme for Project MPSSUP
+MR,MSTR Royalty - TVD,software,,2021-09-21,206047196,Default Permission Scheme
+MTCSD,MTC Support Desk,software,,2019-10-17,206042295,NBCU: Open Permission Scheme
+MSE,MTS Support,software,MTS Support,2021-03-29,206097300,PTG - Systems Engineering
+PTGSEPROJ,MTS Systems Engineering Projects,software,MTS Support,2018-12-20,206102679,PTG - Systems Engineering Projects permission scheme
+NEWSMAM,MTS-News Archive Development,software,,2020-08-05,501961079,Default Permission Scheme
+XMP,MTS-News MediaPulse,software,MTS - CPG,2020-04-10,501961079,Default Permission Scheme
+NLP,MTS-News NLP,software,,2018-08-20,501961079,Default Permission Scheme
+MC,Music Clearance,software,TV Entertainment Technology,2019-10-29,206408622,TVET-Permission Scheme
+MALT,Music Licensing Tracker,software,,2019-11-11,206047555,VCT Read Only Permission Scheme
+MF,MusicForce,software,TV Entertainment Technology,2021-09-22,206408622,TVET-Permission Scheme
+MMB,My Media Box,service_desk,,2021-03-11,206522034,JIRA Service Desk Permission Scheme for Project MMB
+MYD,Mydas,software,,2019-08-08,206040272,NBCU: Open Permission Scheme
+MA,MyScorecard & Approval,software,DevOps,2018-03-21,501954853,Default Permission Scheme
+APWSRTS,NBC Affiliate Marketing Site,software,,2021-08-30,501644194,NBCU: Open Permission Scheme
+NSGI,NBC Sports Group Infrastructure,service_desk,,2021-09-21,206027717,Jira Service Desk Permission Scheme for Project NSGI
+NS,NBCD Sandbox,software,,2020-10-02,206424062,Default software scheme
+NBCEXT,NBCOTS - External Project Teams,software,,2021-09-22,206084698,NBCU: Delegated Admin Permission Scheme
+OTSWEBA,NBCOTS A-Team,software,,2019-01-11,206548724,NBCU: Extended Project Administration Scheme
+OTSCTS,NBCOTS Clear The Shelters & Desocupar los Albergues,software,ZZZ- Archived,2018-06-26,206084698,Archived Projects
+NSD,NBCOTS National Video Desk,service_desk,,2019-08-05,206084698,JIRA Service Desk Permission Scheme for Project NSD
+NBCTLMD,NBCOTS NBC & TLMD,service_desk,,2021-09-22,206084698,JIRA Service Desk Permission Scheme for Project NBCTLMD 1
+OTSWEB1,NBCOTS NES,software,,2020-06-01,206479846,NBCU: Extended Project Administration Scheme
+NEWSAPP57,NBCOTS NewsApps,software,,2020-05-20,206084698,NBCU: Delegated Admin Permission Scheme
+OTSNWSAPPS,NBCOTS NewsApps 5.6,software,,2018-03-15,206084698,NBCU: Extended Project Administration Scheme
+NBCOTS,NBCOTS Research Team ,service_desk,,2021-06-07,206084698,JIRA Service Desk Permission Scheme for Project NBCTLMD 1
+NBCUITA,NBCU - IT Amsterdam,software,,2019-11-29,206584459,NBCU: Open Permission Scheme
+NAPLFA,NBCU Affiliate Post Log File Automation,software,,2021-06-16,206649212,NBCU: Open Permission Scheme
+NCDG,NBCU Central Data Governance,software,,2021-09-16,206534620,NBCU: Open Permission Scheme
+CPG,NBCU CPG,software,,2021-09-22,206604958,NBCU: Open Permission Scheme
+NDD,NBCU D2C Data,software,,2021-09-22,206608686,NBCU: Open Permission Scheme
+NDO,NBCU DevOps,service_desk,,(no issues found),206569869,Jira Service Desk Permission Scheme for Project NDO
+NFO,NBCU Finance O365,software,,2021-09-22,206649212,NFO: Permission Scheme
+NFS,NBCU Formats Salesforce,software,,2020-09-17,206637243,NBCU: Open Permission Scheme
+IDM,NBCU IDM,software,,2020-03-05,206614213,NBCU: Open Permission Scheme
+NL,NBCU Legal,software,,2020-08-06,206578181,NBCU: Open Permission Scheme
+NBCDA,NBCU Local Data & Analytics,software,,2021-09-20,206649212,NBCDA: Open Permission Scheme
+IS,NBCU Mediator Support,software,,(no permission),206083107,Archived Projects
+NOBU,NBCU OTT Business,software,,2021-07-30,206581263,NBCU: Open Permission Scheme
+NOS,NBCU OTT SI,software,,2020-03-30,206632510,NBCU: Open Permission Scheme
+NOT,NBCU OTT Trials,software,,(no permission),206649315,NBCU: Open Permission Scheme
+PRVCY,NBCU Privacy,software,,2021-09-22,206104640,NBCU: Open Permission Scheme
+NSO,NBCU Sales O365,software,,2021-09-17,206649212,NSO: Permission Scheme
+NSA,NBCU Sports App,software,,2017-11-30,206464934,Default Permission Scheme
+NCA,NBCU SupportCentral Library Data Migration,software,,2021-02-03,206445099,Default Permission Scheme
+NBCUUSA,NBCU USA Network,software,,2020-11-24,206426864,Default software scheme
+NBCUID,NBCU-IDM,software,VCT - Vendor Consolidation Template,2021-08-23,206477170,NBCU: +Stakeholders Permission Scheme
+NBCUNOW,NBCUNow,software,,(no issues found),206427031,Archived Projects
+NBCUN,NBCUnow old,software,ZZZ- Archived,2018-05-10,206498307,Archived Projects
+NBCUPP,NBCUPeacockProductions,software,,2017-10-03,206427031,Default software scheme
+NWEB,NBCUWEB,software,Enterprise Application ,(no issues found),206427031,Archived Projects
+NCXDO,NCX DevOps,software,Newsroom Systems,2020-01-14,206426927,NBCU: Open Permission Scheme
+NCX,NCX Re-Platform,software,,2021-09-22,206404828,NBCU: Open Permission Scheme
+NWF,NCX WildFires,software,Newsroom Systems,(no issues found),206404828,NWF: Permission Scheme
+NEAT,NEAT,software,Newsroom Systems,2021-03-23,206596156,NBCU: Strict Permission Scheme
+NEON,NEON Dev,software,,2021-02-16,206544474,NBCU: Open Permission Scheme
+NSP,Network and Security POD,software,,2020-06-11,206628078,NBCU: Open Permission Scheme
+NCM,New Compass,software,,2021-09-22,501959619,NBCU: Open Permission Scheme
+NEWSAPI,NEWS API,software,GMO Digital Products,2020-07-02,501562191,NBCU: Open Permission Scheme
+NTAS,News Technology - Application Support,software,,2017-12-15,206455894,Default: Service Desk Permission Scheme 
+NTM,News Technology Metrics,software,,2020-06-05,206545249,NBCU: Open Permission Scheme
+NVLB,News VM Lab Build,software,,2020-08-27,206097922,NBCU: Open Permission Scheme
+NRT,Newsroom Tools,software,Newsroom Systems,2021-09-22,206404828,NBCU: Devtool Access Permission Scheme
+EW,Nextgen EST Weblogs,software,Media Engineering Systems,2018-05-29,206485565,Default Permission Scheme
+NGEM,NextGen Experience Manager,software,Media Engineering Systems,2017-08-04,206097300,Default software scheme
+NIEL,NIELSEN,software,,2020-04-30,206108430,NBCU: Open Permission Scheme
+MOBILE,NIMBL,software,,2020-10-23,206427031,NBCU: Open Permission Scheme
+NLS,NLS,software,,2021-06-07,206584230,NBCU: Open Permission Scheme
+CNLS,Non-Linear Scheduling,software,Compass,2021-09-22,206659877,NBCU: Open Permission Scheme
+NLSSF,Non-linear Scheduling Salesforce,software,,2020-08-13,206493686,COES: Permission Scheme
+NPEG,NPEG Projects Main,software,,2021-06-28,206097922,NBCU: Open Permission Scheme
+NRCS,NRCS,software,,2018-04-30,206453680,Default software scheme
+NAS,NS Playout Log Services,software,,2021-09-21,206431856,NAS: Open Permission Scheme
+NTSI,NTSI,software,Media Engineering Systems,2021-09-16,206034371,Default software scheme
+OTCE,O&T Cloud Engineering Archive (5/30/20),software,GMO Projects Archive ,2020-08-11,206465641,NBCU: Open Permission Scheme
+IMOE,O&T Int. Media Operations Engineering Support,software,IMO *,2021-09-22,127004532,Default software scheme
+IMOS,O&T Int. Media Operations Support,service_desk,IMO *,2021-09-22,127002688,JIRA Service Desk Permission Scheme for Project IMOS
+OIT,O&T ISO Team,business,,(no issues found),206088302,Default Permission Scheme
+DPSM,O&T Publishing system,software,,2019-05-28,206008547,NBCU: Open Permission Scheme
+OFFICE,O365,software,ZZZ- Archived,2018-06-27,206101424,Archived Projects
+OAS,OASIS,software,,2020-10-06,206408940,Default software scheme
+OGAS,Olympic Games Ad Standards,software,,2021-08-11,206433024,OGAS: Permission Scheme
+OC,One Card,software,,2015-02-05,206052794,Default Permission Scheme
+OTI,OneTrust Integration,software,,2020-11-19,206615924,NBCU: Open Permission Scheme
+OVC,Online Video Catalog,software,Home Entertainment IT,2021-03-30,206600072,Default Permission Scheme
+OIR,Open Invoice Reporting,software,,2021-09-16,206649212,NBCU: Open Permission Scheme
+OPT,Open Platform Technology,software,,2019-12-03,206529987,NBCU: Open Permission Scheme
+AOSR,Operative AOS,software,,2020-08-12,206051637,NBCU: Open Permission Scheme
+OPP,Operative One Product,software,,2021-09-22,206421405,OPP: Permission Scheme
+OPS,Operative One System,software,,2021-09-22,206421405,NBCU: Open Permission Scheme
+OTP,Oracle Technology Projects,software,ZZZ- Archived,2019-01-11,206402232,Archived Projects
+ODM,ORBIT Data Migration,software,,2019-05-14,206103526,Default Permission Scheme
+MOPT,Orbit Posting Tool,software,ZZZ- Archived,2017-11-14,502165234,Archived Projects
+MFAM,Orcas (Archived),software,GMO Projects Archive ,2021-03-12,206618857,Archived Projects
+TL5,Ospreys,software,GMO Translator,2021-09-22,206679089,NBCU: Open Permission Scheme
+OT,OTCE-Demo,software,,2019-03-13,206106561,Default software scheme
+OTSAS,OTS Ad Sales Finance- Weekly Dashboard,software,,(no issues found),206649212,NBCU: Open Permission Scheme
+OTSSIC,OTS Ad Sales- SIC Reporting,software,,(no issues found),206649212,NBCU: Open Permission Scheme
+OTSASI,OTS Ad Solutions and Inventory,software,,2021-09-22,206471334,NBCU: Open Permission Scheme
+OTSD,OTS Digital ,software,,2021-09-22,206084698,NBCOTS Permissions Scheme
+ODCST,OTS Digital Campaign Support TEST,service_desk,,2019-07-25,206471334,JIRA Service Desk Permission Scheme for Project OTSDCS_ v2
+OTSLM,OTS LEX Salesforce ,software,,2021-08-06,206484564,NBCU: Open Permission Scheme
+OTSPP,OTS Payment Portal,software,,2020-02-14,206415737,VCT Read Only Permission Scheme
+OTST,OTS User Call Tracking,software,,2021-09-09,206524753,Default software scheme
+OTTO,OTTO,software,Media Engineering Systems,2021-09-22,206094159,Default Permission Scheme
+OTM,OTTOMation,software,Media Engineering Systems,2020-04-14,501766248,Default software scheme
+OSCT,Owned Stations Call Tracking,software,,2021-09-22,206524753,Default software scheme
+OSSD,Owned Stations SMART Active Software Development,software,,2020-07-07,206656314,NBCU: Open Permission Scheme
+OCD,Oxygen Crime Database,software,,2019-11-21,206601669,NBCU: Open Permission Scheme
+P130JGP,P130J Gameplay Prototype,software,Universal Creative,2019-10-30,703107587,NBCU: Open Permission Scheme
+MSD,P273 Mobile Software Dev,software,,2020-10-07,703081676,NBCU: Open Permission Scheme
+P273S,P273s,software,,2020-06-27,206576810,NBCU: Open Permission Scheme
+PFOS,P406,software,,2021-09-21,206607371,NBCU: Devtool Access Permission Scheme
+UCP505,P505,software,,2021-09-22,703078530,NBCU: Strict Permission Scheme
+P675,P675,software,Universal Creative,2018-07-05,703099162,NBCU: Open Permission Scheme
+P715,P715 Project,software,,2020-03-25,206447528,NBCU: Open Permission Scheme
+P860CE,P860 Control Engineering at USJ,software,,2021-09-18,206626516,NBCU: Open Permission Scheme
+PANDA,PANDA,software,ZZZ- Archived,2019-02-25,502165234,Archived Projects
+PANDAFEEDS,Panda Feeds,software,ZZZ- Archived,2017-11-13,502165234,Archived Projects
+PANDAWS,Panda Web Services,software,ZZZ- Archived,2017-11-13,206407989,Archived Projects
+PAR,PARIS,software,F & WC TV,2021-09-22,206064701,Default Permission Scheme
+PDP,Paris Document Portal,software,,2021-02-18,206531203,NBCU: Open Permission Scheme
+PDD,Passport Digital Distribution,software,,2018-10-12,206402692,Default software scheme
+PIH,Pavo Insight Hub,software,,2021-09-22,206409076,NBCU: Open Permission Scheme
+PBSR,PB Shell Removal,software,ZZZ- Archived,2017-11-08,206076197,Archived Projects
+OPTCOP,PCF Platform Operations,software,,2020-03-19,206106438,NBCU: Open Permission Scheme
+PDM,PDM,software,TV Entertainment Technology,2020-07-09,206601669,NBCU: Open Permission Scheme
+PVI,PE Vendor Issues,software,,2021-06-15,206570603,DCST & PVI Permission Scheme
+PEAR,Peacock,service_desk,DevOps,2021-09-22,206657065,PEAR: Service Desk Permission Scheme 
+PSRE,Peacock - SRE,software,,2021-09-22,206647498,NBCU: Open Permission Scheme
+ADST,Peacock Ad Standards,software,,2021-09-22,206108012,NBCU: Open Permission Scheme
+AK,Peacock Akamai CDN,software,,2020-05-21,206407588,NBCU: Open Permission Scheme
+PCKCDN,Peacock CDN Quality,software,,2021-08-31,206662132,NBCU: Open Permission Scheme
+CL,Peacock CenturyLink CDN,software,,2020-05-05,206407588,NBCU: Open Permission Scheme
+CCDN,Peacock Comcast CDN,software,,2020-07-27,206407588,NBCU: Open Permission Scheme
+PCP,Peacock Commerce Product,software,,2021-09-22,206660106,PCP: Open Permission Scheme
+PCPI,Peacock Commerce Product Intake,software,,2021-05-05,206660106,NBCU: Open Permission Scheme
+CONVIVA,Peacock Conviva,software,,2020-07-22,206407588,NBCU: Open Permission Scheme
+PCDAM,Peacock DAM (ARCHIVED),software,GMO Projects Archive ,2021-06-28,206428131,NBCU: Open Permission Scheme
+PKD,Peacock Dashboards,software,,2021-06-24,206463631,NBCU: Open Permission Scheme
+PCK,Peacock Data,software,,2020-09-29,206108430,NBCU: Open Permission Scheme
+PCDM,Peacock Data Marts,software,,2021-09-22,206687482,NBCU: Open Permission Scheme
+PKDSCO,Peacock Data Science Content,software,,2021-04-08,206555666,NBCU: Open Permission Scheme
+PKDSCU,Peacock Data Science Customer,software,,2021-09-21,206555666,NBCU: Open Permission Scheme
+PKDS,Peacock Data Science Recs,software,,2021-09-22,206555666,NBCU: Open Permission Scheme
+PDST,Peacock Data Science Test,software,,(no issues found),206694719,NBCU: Open Permission Scheme
+DATAPM,Peacock Decision Science Data Product Management,software,,2020-03-04,206651164,NBCU: Open Permission Scheme
+TECHDES,Peacock Decision Science Technical Design,software,,2020-10-01,206651164,NBCU: Open Permission Scheme
+PDS,Peacock Decision Sciences,software,,2021-09-22,206608686,NBCU: Open Permission Scheme
+PCKDNOC,Peacock DNOC,software,,2021-09-22,206520788,NBCU: Open Permission Scheme
+DATA,Peacock E2E Data Platform,software,,2021-07-16,206632520,NBCU: Open Permission Scheme
+PINT,Peacock International,software,,2021-09-22,206675881,PINT: Permission Scheme
+LL,Peacock Limelight,software,,2020-08-10,206407588,NBCU: Open Permission Scheme
+LEAP,Peacock Live Event Application Platform,software,,2020-11-05,206048271,NBCU: Open Permission Scheme
+PCKMT,Peacock MediaTailor,software,,2021-09-22,206503607,NBCU: Open Permission Scheme
+POC,Peacock Operational Change,software,,2020-10-07,206632520,NBCU: Open Permission Scheme
+CVSDKQA,Peacock Playback Services QA,software,,(no issues found),206462272,CVSDKQA: Permission Scheme
+PP,Peacock PMO,software,,2021-03-18,206654843,NBCU: Open Permission Scheme
+PPT,Peacock Product Team,software,,2021-09-22,206639008,NBCU: Open Permission Scheme
+PSOX,Peacock SOX,software,,2021-09-22,206675881,NBCU: Open Permission Scheme
+PCKATV,Peacock Technology Client AppleTV,software,,2021-09-22,206654448,PCK: Permission Scheme
+PCKAUTO,Peacock Technology Client Automation QA,software,,2021-09-22,206622147,PCKAUTO: Open Permission Scheme
+PTCI,Peacock Technology Client Intake,software,,2021-09-22,206622140,PTCI: Open Permission Scheme
+PCKLTV,Peacock Technology Client Lightning xTV,software,,2021-09-22,206622308,PCK: Permission Scheme
+PCKMOB,Peacock Technology Client Mobile,software,,2021-09-22,206664139,PCK: Permission Scheme
+PCKCQA,Peacock Technology Client QA,software,,2021-09-22,206622198,NBCU: Open Permission Scheme
+PCKROKU,Peacock Technology Client Roku,software,,2021-09-22,206652070,PCK: Permission Scheme
+PTCSC,Peacock Technology Client Small Changes,software,,2020-06-11,206622198,NBCU: Open Permission Scheme
+PCKWEB,Peacock Technology Client Web,software,,2021-09-22,206652070,PCK: Permission Scheme
+PCKTV,Peacock Technology Client xTV,software,,2021-09-22,206622308,PCK: Permission Scheme
+PCKCBA,Peacock Technology Clients Business Analysis,software,,2020-12-03,206622198,PCK: Permission Scheme
+PCKCSR,Peacock Technology Clients Release Management and Data Engineering,software,,2021-09-07,206673536,PCK: Permission Scheme
+PTD,Peacock Technology Delivery,service_desk,,2021-09-22,206461499,Jira Service Desk Permission Scheme for Project PTD
+PCKEQA,Peacock Technology E2E QA,software,,2021-09-22,206622147,PCKEQA: Permission Scheme
+PTP,Peacock Technology PMO,software,,2021-08-27,206461499,NBCU: Open Permission Scheme
+PTM,Peacock Trials Management,service_desk,,2021-09-22,206461499,Jira Service Desk Permission Scheme for Project PTM
+USCLIENT,Peacock US Client Development,software,,2020-10-22,206048271,NBCU: Open Permission Scheme
+PVE,Peacock Video Editorial,software,,2021-05-17,206412235,NBCU: Open Permission Scheme
+PVED,Peacock Video Engineering Development,software,,2021-09-22,206461936,PVED: Open Permission Scheme
+PCKVOD,Peacock VOD Pipeline,software,,2021-07-21,206577312,NBCU: Open Permission Scheme
+TLBCAST,Penguins (ARCHIVED),software,GMO Projects Archive ,2021-05-07,206454347,NBCU: Open Permission Scheme
+PAT,People Analytics Technology,software,,2021-09-22,206052259,NBCU: Open Permission Scheme
+PER,PER Review Process,software,,2020-05-19,206555371,NBCU: Open Permission Scheme
+PCF,Pivotal Cloud Foundry,software,ZZZ- Archived,2018-04-27,206069440,Archived Projects
+PKP,Platform Knowledge Portal,software,ZZZ- Archived,2018-07-20,206069440,Archived Projects
+PBS,Playback Services,software,,2021-09-22,206423611,PBS: Default software scheme
+PSKPI,Playback Services KPI,software,,2021-09-22,206693682,NBCU: Open Permission Scheme
+INTLPMAM,PMAM International,software,GMO Services,(no issues found),206492412,NBCU: Open Permission Scheme
+POPPY,Poppy,software,,2020-04-30,206542493,NBCU: Open Permission Scheme
