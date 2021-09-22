@@ -53,27 +53,20 @@ def getProjectLastActivity(projkey):
 		(errorsev, errormsg) = (2, errother)
 	return (errorsev, errormsg, lastupddate)
 
-def getUserEmail(username):
-	email = ""
+def getProjectPermissionScheme(projkey):
+	projpermscheme = {}
 	try:  # call rest api
-		response = requests.get(f"https://{jirahostname}/rest/api/latest/user", 
-			params={'username':username}, auth=HTTPBasicAuth(myjirauser, myjirapwd))
+		response = requests.get(f"https://{jirahostname}/rest/api/latest/project/{projkey}/permissionscheme", 
+			auth=HTTPBasicAuth(myjirauser, myjirapwd))
 		response.raise_for_status()
 		# Code here will only run if the request is successful
-		user =  response.json()
-		if "emailAddress" in user:
-			email = user.get("emailAddress")
+		projpermscheme = response.json()
 		(errorsev, errormsg) = (0, '')
 	except requests.exceptions.HTTPError as errhttp:
-		if response.status_code == 401:
-			(errorsev, errormsg) = (2, f"STATUS 401 - admin user not authorized.")
-		elif response.status_code == 404:
-			(errorsev, errormsg, email) = (1, f"STATUS 404 - requested user {username} not found.", "(no permission)")
-		else:
-			(errorsev, errormsg) = (2, errhttp)
+		(errorsev, errormsg) = (1, errhttp)
 	except (requests.exceptions.ConnectionError, requests.exceptions.Timeout, requests.exceptions.RequestException) as errother:
 		(errorsev, errormsg) = (2, errother)
-	return (errorsev, errormsg, email)
+	return (errorsev, errormsg, projpermscheme)
 
 #--------------------------------------------
 
@@ -83,11 +76,12 @@ def getUserEmail(username):
 jirahostname = input("\nASKING:  Please enter the Jira hostname: ")
 myjirauser = input("\nASKING:  Please enter your Jira Admin user: ")
 myjirapwd = getpass("\tPlease enter password: ")
+startingprojkey = input("\nASKING:  Please enter the starting Project Key (leave empty otherwise): ")
 
 # create and open csv file
 date_time = datetime.now().strftime('D%Y%m%d_T%H%M%S')
 csvfilename = f"extractJiraProjects_{date_time}.csv"
-with open(csvfilename, 'w', newline='') as csvfile:
+with open(csvfilename, "w", encoding="utf-8", newline="") as csvfile:
 	csvdata = csv.writer(csvfile, delimiter=",", quotechar="\"")
 
 	# extract all Jira projects
@@ -96,49 +90,55 @@ with open(csvfilename, 'w', newline='') as csvfile:
 	if errsev == 0:
 
 		# create CSV row with column header cells in the same order as actual data row cells that will be created further below
-		csvdata.writerow(['projectKey','projectName','projectType','category','lastIssueUpdate','leadSSO','activeSSO?','leadName','leadEmail'])
+		csvdata.writerow(['projectKey','projectName','projectType','category','lastIssueUpdate','leadUserName','permissionScheme'])
 
 		# process extracted projects
 		print(F"\nRUNNING:  Processing extracted projects:\n")
+		ignoreproject = True
 		for index,project in enumerate(allprojects):
-			print(f"\tProcessing project {project.get('key')} - {project.get('name')}...")
 
-			lead = project.get("lead")
-			category = project.get("projectCategory")
+			if not(ignoreproject) or not(startingprojkey) or project.get('key') == startingprojkey:
+				ignoreproject = False
 
-			# get project last issue update date
-			(errsev, errmsg, lastissueupdate) = getProjectLastActivity(project.get("key"))
-			if errsev > 0:
-				print(F"\t\t{errmsg}")
-				if errsev > 1:
-					print(F"\nINTERRUPTED:  Process aborted due to hard failure.")
-					exit(1)
+				print(f"\tProcessing project {project.get('key')} - {project.get('name')}...")
 
-			# get project lead's email
-			(errsev, errmsg, useremail) = getUserEmail(lead.get("name"))
-			if errsev > 0:
-				print(F"\t\t{errmsg}")
-				if errsev > 1:
-					print(F"\nINTERRUPTED:  Process aborted due to hard failure.")
-					exit(1)
+				lead = project.get("lead")
+				category = project.get("projectCategory")
 
-			# create CSV row with cells in the same order as column headers created earlier
-			csvrow = []
-			csvrow.append(project.get("key"))
-			csvrow.append(project.get("name"))
-			csvrow.append(project.get("projectTypeKey"))
-			if category != None:
-				csvrow.append(category.get("name"))
+				# get project last issue update date
+				(errsev, errmsg, lastissueupdate) = getProjectLastActivity(project.get("key"))
+				if errsev > 0:
+					print(F"\t\t{errmsg}")
+					if errsev > 1:
+						print(F"\nINTERRUPTED:  Process aborted due to hard failure.")
+						exit(1)
+
+				# get project permission scheme
+				(errsev, errmsg, projpermscheme) = getProjectPermissionScheme(project.get("key"))
+				if errsev > 0:
+					print(F"\t\t{errmsg}")
+					if errsev > 1:
+						print(F"\nINTERRUPTED:  Process aborted due to hard failure.")
+						exit(1)
+
+				# create CSV row with cells in the same order as column headers created earlier
+				csvrow = []
+				csvrow.append(project.get("key"))
+				csvrow.append(project.get("name"))
+				csvrow.append(project.get("projectTypeKey"))
+				if category != None:
+					csvrow.append(category.get("name"))
+				else:
+					csvrow.append(None)
+				csvrow.append(lastissueupdate)
+				csvrow.append(lead.get("name"))
+				csvrow.append(projpermscheme.get("name"))
+				csvdata.writerow(csvrow)
+
+				print(f"\t\tProject {project.get('key')} written to CSV file.")
+
 			else:
-				csvrow.append(None)
-			csvrow.append(lastissueupdate)
-			csvrow.append(lead.get("name"))
-			csvrow.append(lead.get("active"))
-			csvrow.append(lead.get("displayName"))
-			csvrow.append(useremail)
-			csvdata.writerow(csvrow)
-
-			print(f"\t\tProject {project.get('key')} written to CSV file.")
+				print(f"\tIgnoring project {project.get('key')} - {project.get('name')}...")
 
 	else:
 		print(f"\t{errmsg}")
@@ -147,5 +147,4 @@ with open(csvfilename, 'w', newline='') as csvfile:
 	csvfile.close()
 
 exit(0)
-
 
