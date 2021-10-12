@@ -56,10 +56,28 @@ def getProjectRoleData(projroleurl):
 		(errorsev, errormsg) = (2, errother)
 	return (errorsev, errormsg, roledata)
 
+def getGroupUsers(groupname,batchsize,batchstart):
+	userbatch = {}
+	try:  # call rest api
+		response = requests.get(f"https://{jirahostname}/rest/api/latest/group/member", 
+			params={'groupname':groupname, 'includeInactiveUsers':'true', 'maxResults':batchsize, 'startAt':batchstart}, 
+			auth=HTTPBasicAuth(myjirauser, myjirapwd))
+		response.raise_for_status()
+		# Code here will only run if the request is successful
+		userbatch = response.json()
+		(errorsev, errormsg) = (0, '')
+	except requests.exceptions.HTTPError as errhttp:
+		(errorsev, errormsg) = (1, errhttp)
+	except (requests.exceptions.ConnectionError, requests.exceptions.Timeout, requests.exceptions.RequestException) as errother:
+		(errorsev, errormsg) = (2, errother)
+	return (errorsev, errormsg, userbatch)
 
 #--------------------------------------------
 
 # receive/set params
+
+# set defaults
+batchsize = 50
 
 # ask me for jira host and my creds
 jirahostname = input("\nASKING:  Please enter the Jira hostname: ")
@@ -83,7 +101,7 @@ with open(csvfilename, "w", encoding="utf-8", newline="") as csvfile:
 	if errsev == 0:
 
 		# create CSV row with column header cells in the same order as actual data row cells that will be created further below
-		csvdata.writerow(['projectKey','roleId','roleName','actorName','actorDisplayName'])
+		csvdata.writerow(['projectKey','roleId','roleName','actorType','actorName','actorDisplayName','userName','userDisplayName'])
 
 		# process extracted projects
 		print(F"\nRUNNING:  Processing extracted projects:\n")
@@ -121,14 +139,75 @@ with open(csvfilename, "w", encoding="utf-8", newline="") as csvfile:
 					for idx2,actor in enumerate(roleactors):
 						print(f"\t\t\tProcessing actor ({actor.get('name')}) {actor.get('displayName')}...")
 
-						# create CSV row with cells in the same order as column headers created earlier
-						csvrow = []
-						csvrow.append(project.get('key'))
-						csvrow.append(roledata.get('id'))
-						csvrow.append(roledata.get('name'))
-						csvrow.append(actor.get('name'))
-						csvrow.append(actor.get('displayName'))
-						csvdata.writerow(csvrow)
+						if actor.get('type') == "atlassian-user-role-actor":
+							# create CSV row with cells in the same order as column headers created earlier
+							csvrow = []
+							csvrow.append(project.get('key'))
+							csvrow.append(roledata.get('id'))
+							csvrow.append(roledata.get('name'))
+							csvrow.append(actor.get('type'))
+							csvrow.append(actor.get('name'))
+							csvrow.append(actor.get('displayName'))
+							csvrow.append(actor.get('name'))
+							csvrow.append(actor.get('displayName'))
+							csvdata.writerow(csvrow)
+
+						if actor.get('type') == "atlassian-group-role-actor":
+							# create CSV row with cells in the same order as column headers created earlier
+							csvrow = []
+							csvrow.append(project.get('key'))
+							csvrow.append(roledata.get('id'))
+							csvrow.append(roledata.get('name'))
+							csvrow.append(actor.get('type'))
+							csvrow.append(actor.get('name'))
+							csvrow.append(actor.get('displayName'))
+							csvrow.append(None)
+							csvrow.append(None)
+							csvdata.writerow(csvrow)
+
+							# expand group members and individual users
+							if not actor.get('name').startswith("jira-"):
+								# get usergroup
+
+								# extract group users
+								groupname = actor.get('name')
+								print(f"\nRUNNING:  Extracting all {groupname} group users...")
+								batchstart = 0
+								lastbatch = False
+								while not(lastbatch):
+
+									# extract users
+									print(f"\nRUNNING:  Extracting batch of {batchsize}:{batchstart} users:\n")
+									(errsev, errmsg, userbatch) = getGroupUsers(groupname,batchsize,batchstart)
+									if errsev > 1:
+										print(f"\t\t{errmsg}")
+										print(f"\nINTERRUPTED:  Process aborted due to hard failure.")
+										exit(1)
+
+									if errsev == 0:
+										users = userbatch.get('values')
+										if users:
+											# process users
+											print(f"\nRUNNING:  Processing batch of users:\n")
+											for idx1,user in enumerate(users):
+												print(f"\tProcessing user {user.get('name')} - {user.get('displayName')}...")
+
+												# create CSV row with cells in the same order as column headers created earlier
+												csvrow = []
+												csvrow.append(project.get('key'))
+												csvrow.append(roledata.get('id'))
+												csvrow.append(roledata.get('name'))
+												csvrow.append(actor.get('type'))
+												csvrow.append(actor.get('name'))
+												csvrow.append(actor.get('displayName'))
+												csvrow.append(f"{user.get('name')}")
+												csvrow.append(user.get('displayName'))
+												csvdata.writerow(csvrow)
+
+										lastbatch = userbatch.get('isLast')
+										batchstart += batchsize
+									else:  # errsev = 1
+										lastbatch = True
 
 			else:
 				print(f"\tIgnoring project {project.get('key')} - {project.get('name')}...")

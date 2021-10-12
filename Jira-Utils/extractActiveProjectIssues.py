@@ -94,7 +94,7 @@ with open(csvfilename, "w", encoding="utf-8", newline="") as csvfile:
 	if errsev == 0:
 
 		# create CSV row with column header cells in the same order as actual data row cells that will be created further below
-		csvdata.writerow(['projectKey','projectName','projectType','category','lastIssueUpdate','leadUserName','leadDisplayName','permissionScheme'])
+		csvdata.writerow(['projectKey','projectName','projectType','category','lastIssueUpdate','leadUserName','permissionScheme'])
 
 		# process extracted projects
 		print(F"\nRUNNING:  Processing extracted projects:\n")
@@ -117,13 +117,22 @@ with open(csvfilename, "w", encoding="utf-8", newline="") as csvfile:
 						print(F"\nINTERRUPTED:  Process aborted due to hard failure.")
 						exit(1)
 
-				# get project permission scheme
-				(errsev, errmsg, projpermscheme) = getProjectPermissionScheme(project.get("key"))
-				if errsev > 0:
-					print(F"\t\t{errmsg}")
-					if errsev > 1:
-						print(F"\nINTERRUPTED:  Process aborted due to hard failure.")
-						exit(1)
+				# skip inactive projects (< 1/1/2021)
+
+					# get project permission scheme
+					(errsev, errmsg, projpermscheme) = getProjectPermissionScheme(project.get("key"))
+					if errsev > 0:
+						print(F"\t\t{errmsg}")
+						if errsev > 1:
+							print(F"\nINTERRUPTED:  Process aborted due to hard failure.")
+							exit(1)
+
+					# skip archived projects
+
+
+						# get project issues
+						
+
 
 				# create CSV row with cells in the same order as column headers created earlier
 				csvrow = []
@@ -136,7 +145,6 @@ with open(csvfilename, "w", encoding="utf-8", newline="") as csvfile:
 					csvrow.append(None)
 				csvrow.append(lastissueupdate)
 				csvrow.append(lead.get("name"))
-				csvrow.append(lead.get("displayName"))
 				csvrow.append(projpermscheme.get("name"))
 				csvdata.writerow(csvrow)
 
